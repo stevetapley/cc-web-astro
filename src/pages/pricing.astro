@@ -8,6 +8,11 @@ const entry = (await getEntry(
   "pricing",
   "-index"
 )) as CollectionEntry<"pricing">;
+
+if (entry?.data?.draft) {
+  return Astro.redirect("/404");
+}
+
 const { title, description, plans, call_to_action } = entry.data;
 ---
 

@@ -5,6 +5,11 @@ import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
 const entry = (await getEntry("faq", "-index")) as CollectionEntry<"faq">;
+
+if (entry?.data?.draft) {
+  return Astro.redirect("/404");
+}
+
 const { title, description, faqs } = entry.data;
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Pricing
 description: "meta description"
-draft: false
+draft: true
 plans:
 - title: Basic Plan
   subtitle: Best For Small Individuals
