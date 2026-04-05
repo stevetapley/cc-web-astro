@@ -17,38 +17,33 @@
       "url": "/contact"
     },
     {
-      "name": "For",
-      "url": ""
+      "name": "Individuals",
+      "url": "/individuals"
+    },
+    {
+      "name": "Teams",
+      "url": "teams"
     }
   ],
   "footer": [
     {
-      "name": "Company",
-      "menu": [
-        {
-          "text": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "text": "Quick Start",
-          "url": "#"
-        }
-      ]
-    },
-    {
       "name": "Product",
       "menu": [
         {
-          "text": "Features",
-          "url": "#"
+          "text": "Individiauls",
+          "url": "/individuals"
         },
         {
-          "text": "Platform",
-          "url": "#"
+          "text": "Team leaders",
+          "url": "/team-leaders"
         },
         {
-          "text": "Pricing",
-          "url": "/pricing"
+          "text": "HR & Culture leaders",
+          "url": "/hr-and-culture"
+        },
+        {
+          "text": "Recruiters",
+          "url": "/Recruiters"
         }
       ]
     },
@@ -56,8 +51,8 @@
       "name": "Support",
       "menu": [
         {
-          "text": "FAQ",
-          "url": "/faq"
+          "text": "Contact",
+          "url": "/contact"
         },
         {
           "text": "Privacy Policy",
