@@ -13,7 +13,7 @@ You’ve hit the milestones and earned the title, yet you’re still checking yo
 
 It's time to stop adapting to every role and start finding one that adapts to you.
 
-[Uncover my drivers](https://my.careerclarity.app) ![](images/sierra-services-2.png) ![](images/portfolio3.jpg)
+[Uncover my drivers](https://my.careerclarity.app) ![](/images/sierra-services-2.png) ![](/images/portfolio3.jpg)
 
 ## Are you performing, or just getting through?
 
@@ -40,7 +40,7 @@ You’ll get a clear, written summary of your priorities, your friction points, 
 
 ### Testimonials
 
-![](images/review4.jpg) **Rom** Engineer
+![](/images/review4.jpg) **Rom** Engineer
 
 The career profile analysis is spot on. It's like it knows me better than me - and it was good to see some actions I can take to my manager.
 

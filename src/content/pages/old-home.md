@@ -106,17 +106,17 @@ _We're still building out this part of our app. Get in touch with us at "hello a
 **_Your profile also unlocks an AI Clarity Coach - ask it anything about your results, your role, your manager, or your next move._**
 
 [See what actually matters to me](https://my.careerclarity.app)[
-![2026-03-04\_15-19-37](images/2026-03-04_15-19-37.png)
+![2026-03-04\_15-19-37](/images/2026-03-04_15-19-37.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/2026-03-04_15-19-37.png)[
-![2026-03-04\_15-47-41](images/2026-03-04_15-47-41.png)
+![2026-03-04\_15-47-41](/images/2026-03-04_15-47-41.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/2026-03-04_15-47-41.png)[
-![analysis-1](images/analysis-1.png)
+![analysis-1](/images/analysis-1.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/analysis-1.png)[
-![analysis-2](images/analysis-2.png)
+![analysis-2](/images/analysis-2.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/analysis-2.png)[
-![analysis-3](images/analysis-3.png)
+![analysis-3](/images/analysis-3.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/analysis-3.png)[
-![analysis-4](images/analysis-4.png)
+![analysis-4](/images/analysis-4.png)
 ](http://careerclarity.local/wp-content/uploads/2026/03/analysis-4.png)
 
 ## Four things your profile tells you
@@ -171,7 +171,7 @@ No credit card required. Private & Secure.
 
 ### Testimonials
 
-![](images/review4.jpg) **Rom** Engineer
+![](/images/review4.jpg) **Rom** Engineer
 
 The career profile analysis is spot on. It's like it knows me better than me - and it was good to see some actions I can take to my manager.
 
