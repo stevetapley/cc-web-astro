@@ -4,30 +4,26 @@
     "base_url": "https://bigspring-light-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images/logo-only.png",
+    "logo": "/images/logo-light-writing.png",
     "logo_width": "200",
     "logo_height": "38",
-    "logo_text": "Bigspring Light"
+    "logo_text": "Career Clarity"
   },
-
   "settings": {
     "pagination": 4,
     "summary_length": 200
   },
-
   "nav_button": {
     "enable": true,
     "label": "Get Started",
     "link": "/contact"
   },
-
   "params": {
     "contact_form_action": "#",
     "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "copyright": "Career Clarity"
   },
-
   "metadata": {
     "meta_author": "Themefisher",
     "meta_image": "/images/og-image.png",
