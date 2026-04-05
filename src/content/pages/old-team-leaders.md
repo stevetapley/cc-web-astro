@@ -1,0 +1,14 @@
+---
+title: "For team leaders"
+date: 2026-03-09
+---
+
+# Lead the human, not just the "resource".
+
+todo
+
+## We're working on this...
+
+We're still building out this part of our site.  Get in touch with us at "hello at careerclarity.app" if you would like more information.
+
+[Try it for myself](https://my.careerclarity.app) ![](images/sierra-services-2.png)
