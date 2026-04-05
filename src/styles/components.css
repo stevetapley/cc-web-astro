@@ -455,3 +455,32 @@
 .audience-testimonial-card {
   @apply rounded-[20px] border border-border bg-white px-6 py-8 shadow-[0_24px_60px_-42px_rgba(23,20,58,0.45)] md:px-10;
 }
+
+/* contact page */
+.contact-panel {
+  @apply grid gap-6 rounded-[26px] border border-border bg-white/70 p-5 shadow-[0_24px_60px_-46px_rgba(23,20,58,.45)] backdrop-blur-[1px] md:p-8 lg:grid-cols-[1.2fr_0.8fr];
+}
+
+.contact-panel-copy {
+  @apply rounded-[20px] bg-white/60 p-4 md:p-6;
+}
+
+.contact-list-modern {
+  @apply list-none space-y-3 pl-0;
+}
+
+.contact-list-modern li {
+  @apply rounded-xl border border-border bg-body px-4 py-3 text-text;
+}
+
+.contact-list-modern li a {
+  @apply font-semibold text-primary underline-offset-2 hover:underline;
+}
+
+.waitlist-callout {
+  @apply rounded-[20px] border border-dashed border-primary/40 bg-light/60 p-5 md:p-6;
+}
+
+.waitlist-placeholder {
+  @apply rounded-xl border border-border bg-white/75 p-4;
+}

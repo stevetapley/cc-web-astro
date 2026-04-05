@@ -1,6 +1,6 @@
 ---
-import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
+import ActionButton from "@/layouts/components/ActionButton.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
@@ -9,69 +9,52 @@ const entry = (await getEntry(
   "contact",
   "-index"
 )) as CollectionEntry<"contact">;
-const { contact_form_action } = config.params;
 const { title, description, info } = entry.data;
 ---
 
 <Base title={title} description={description}>
-  <section class="section">
+  <section class="section pt-10 md:pt-14">
     <div class="container">
-      <h1 class="text-center font-normal" set:html={markdownify(title)} />
-      <div class="section row pb-0">
-        <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action}>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="email"
-                type="email"
-                placeholder="Your email"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-textarea w-full rounded-md"
-                rows="5"
-                placeholder="Your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary"> Send Now</button>
-          </form>
-        </div>
-        <div class="content col-12 md:col-6 lg:col-5">
-          <h4 set:html={markdownify(info?.title)} />
-          <p class="mt-4" set:html={markdownify(info?.description)} />
-          <ul class="contact-list mt-5 list-none pl-0">
+      <div class="audience-page-heading">
+        <h1 class="h1" set:html={markdownify(title)} />
+        <p class="mt-4" set:html={markdownify(description)} />
+      </div>
+
+      <div class="contact-panel mt-10 md:mt-12">
+        <div class="contact-panel-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 set:html={markdownify(info?.title)} />
+          <p class="mt-4 max-w-[560px]" set:html={markdownify(info?.description)} />
+
+          <ul class="contact-list contact-list-modern mt-6">
             {
               info?.contacts?.map((contact) => (
-                <li>
-                  <strong
-                    class="text-text-dark"
-                    set:html={markdownify(contact)}
-                  />
-                </li>
+                <li set:html={markdownify(contact)} />
               ))
             }
           </ul>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <ActionButton href="mailto:hello@careerclarity.app" label="Email us" />
+          </div>
         </div>
+
+        <aside class="waitlist-callout hidden">
+          <p class="eyebrow">Coming soon</p>
+          <h3 class="h4">Waitlist / early access area</h3>
+          <p class="mt-3">
+            This space is intentionally reserved for your future waitlist form or signup CTA.
+            For now, it works as a simple placeholder that can be removed or swapped later.
+          </p>
+          <div class="waitlist-placeholder mt-5">
+            <p class="font-primary text-base font-semibold text-text-dark">Future options</p>
+            <ul class="mt-3 space-y-2 text-sm text-text">
+              <li>• Waitlist signup form</li>
+              <li>• Calendly / booking CTA</li>
+              <li>• Early access announcement</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
