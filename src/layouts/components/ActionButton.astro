@@ -1,0 +1,30 @@
+---
+import { isExternalUrl } from "@/lib/utils/url";
+
+interface Props {
+  href: string;
+  label?: string;
+  variant?: "primary" | "outline-primary";
+  className?: string;
+}
+
+const {
+  href,
+  label,
+  variant = "primary",
+  className = "",
+} = Astro.props as Props;
+
+const isExternal = isExternalUrl(href);
+const rel = isExternal ? "noopener noreferrer" : undefined;
+const target = isExternal ? "_blank" : undefined;
+---
+
+<a
+  href={href}
+  class={`btn btn-${variant} ${className}`.trim()}
+  target={target}
+  rel={rel}
+>
+  <slot>{label}</slot>
+</a>

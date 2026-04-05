@@ -1,5 +1,5 @@
 .header {
-  @apply bg-white py-[14px] px-4 md:px-0 md:py-[9px];
+  @apply sticky top-0 z-50 border-b border-border bg-white/90 px-4 py-[14px] backdrop-blur-sm md:px-0 md:py-[12px];
 }
 
 /* navbar items */
@@ -8,7 +8,7 @@
 }
 
 .navbar-brand {
-  @apply text-xl font-semibold text-text-dark;
+  @apply text-xl font-primary font-bold text-text-dark;
 
   img {
     @apply max-h-full max-w-full object-contain;
@@ -28,7 +28,7 @@
 }
 
 .nav-link {
-  @apply py-3 px-2 font-primary text-base font-bold text-text-dark transition hover:text-primary md:py-4 lg:px-3;
+  @apply px-2 py-3 font-secondary text-[15px] font-medium text-text-dark transition-colors hover:text-primary md:py-4 lg:px-3;
 }
 
 .nav-link-active {

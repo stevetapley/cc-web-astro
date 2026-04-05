@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import ActionButton from "@/components/ActionButton.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 
 const { cta } = Astro.props;
@@ -22,13 +23,11 @@ const { cta } = Astro.props;
         <p class="mt-6" set:html={markdownify(cta?.content)} />
         {
           cta.button.enable && (
-            <a
-              class="btn btn-primary mt-4"
+            <ActionButton
+              className="mt-4"
               href={cta.button.link}
-              rel={cta.button.rel}
-            >
-              {cta.button.label}
-            </a>
+              label={cta.button.label}
+            />
           )
         }
       </div>

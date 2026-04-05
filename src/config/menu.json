@@ -5,32 +5,39 @@
       "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Pricing",
-      "url": "/pricing"
+      "name": "For",
+      "url": "/individuals",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Individuals",
+          "url": "/individuals"
+        },
+        {
+          "name": "Team leaders",
+          "url": "/team-leaders"
+        },
+        {
+          "name": "HR & culture leaders",
+          "url": "/hr-and-culture"
+        },
+        {
+          "name": "Recruiters",
+          "url": "/recruiters"
+        }
+      ]
     },
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Individuals",
-      "url": "/individuals"
-    },
-    {
-      "name": "Teams",
-      "url": "teams"
     }
   ],
   "footer": [
     {
-      "name": "Product",
+      "name": "For...",
       "menu": [
         {
-          "text": "Individiauls",
+          "text": "Individuals",
           "url": "/individuals"
         },
         {
@@ -38,17 +45,17 @@
           "url": "/team-leaders"
         },
         {
-          "text": "HR & Culture leaders",
+          "text": "HR & culture leaders",
           "url": "/hr-and-culture"
         },
         {
           "text": "Recruiters",
-          "url": "/Recruiters"
+          "url": "/recruiters"
         }
       ]
     },
     {
-      "name": "Support",
+      "name": "Get in touch",
       "menu": [
         {
           "text": "Contact",

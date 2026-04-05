@@ -10,6 +10,9 @@ const homepageCollection = defineCollection({
       .object({
         title: z.string().optional(),
         content: z.string().optional(),
+        subtitle: z.string().optional(),
+        note: z.string().optional(),
+        rotating_phrases: z.array(z.string()).optional(),
         image: z.string().optional(),
         button: z
           .object({
@@ -20,16 +23,91 @@ const homepageCollection = defineCollection({
           .optional(),
       })
       .optional(),
-    feature: z.object({
-      title: z.string(),
-      features: z.array(
-        z.object({
-          name: z.string(),
-          icon: z.string().optional(),
-          content: z.string().optional(),
-        }),
-      ),
-    }),
+    audience_tabs: z
+      .object({
+        items: z.array(
+          z.object({
+            name: z.string(),
+            title: z.string(),
+            content: z.string(),
+            emphasis: z.string().optional(),
+            note: z.string().optional(),
+            button: z
+              .object({
+                label: z.string(),
+                link: z.string().default("/contact"),
+                enable: z.boolean().default(true),
+              })
+              .optional(),
+          }),
+        ),
+      })
+      .optional(),
+    how_it_works: z
+      .object({
+        eyebrow: z.string().optional(),
+        title: z.string(),
+        description: z.string().optional(),
+        image: z.string().optional(),
+        images: z.array(z.string()).optional(),
+        steps: z.array(
+          z.object({
+            title: z.string(),
+            content: z.string(),
+          }),
+        ),
+        note: z.string().optional(),
+        button: z
+          .object({
+            label: z.string(),
+            link: z.string().default("/contact"),
+            enable: z.boolean().default(true),
+          })
+          .optional(),
+      })
+      .optional(),
+    profile_highlights: z
+      .object({
+        title: z.string(),
+        description: z.string().optional(),
+        image: z.string().optional(),
+        images: z.array(z.string()).optional(),
+        items: z.array(
+          z.object({
+            title: z.string(),
+            content: z.string(),
+          }),
+        ),
+        button: z
+          .object({
+            label: z.string(),
+            link: z.string().default("/contact"),
+            enable: z.boolean().default(true),
+          })
+          .optional(),
+      })
+      .optional(),
+    testimonial: z
+      .object({
+        title: z.string().optional(),
+        quote: z.string(),
+        author: z.string(),
+        role: z.string().optional(),
+        image: z.string().optional(),
+      })
+      .optional(),
+    feature: z
+      .object({
+        title: z.string(),
+        features: z.array(
+          z.object({
+            name: z.string(),
+            icon: z.string().optional(),
+            content: z.string().optional(),
+          }),
+        ),
+      })
+      .optional(),
     services: z
       .array(
         z.object({
@@ -57,7 +135,7 @@ const homepageCollection = defineCollection({
       .object({
         title: z.string().optional(),
         content: z.string().optional(),
-        image: z.string(),
+        image: z.string().optional(),
         button: z
           .object({
             label: z.string(),

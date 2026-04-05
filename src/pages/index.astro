@@ -1,182 +1,243 @@
 ---
 import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
-import Cta from "@/layouts/components/Cta.astro";
+import ActionButton from "@/layouts/components/ActionButton.astro";
+import AudienceTabs from "@/layouts/components/AudienceTabs";
+import ImageCarousel from "@/layouts/components/ImageCarousel";
+import RotatingText from "@/layouts/components/RotatingText";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-
-import { Swiper, SwiperWrapper, SwiperSlide, SwiperPagination } from "astro-swiper";
-import type { SwiperOptions } from 'swiper/types'
-const swiperOptions: SwiperOptions = {
-  autoplay: {
-    delay: 3000,
-  },
-  pagination: {
-    type: "bullets",
-    el: ".service-carousel .pagination",
-    clickable: true,
-  },
-}
 
 const homepage = (await getEntry(
   "homepage",
   "-index"
 )) as CollectionEntry<"homepage">;
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+
+const {
+  banner,
+  audience_tabs,
+  how_it_works,
+  profile_highlights,
+  call_to_action,
+  testimonial,
+} = homepage.data;
 ---
 
 <Base>
-  <!-- banner -->
-  <section class="section pb-[50px]">
+  <section class="hero-pattern section pb-12 pt-8 md:pt-14">
     <div class="container">
-      <div class="row text-center">
-        <div class="mx-auto lg:col-10">
-          <h1 class="font-primary font-bold">{banner?.title}</h1>
+      <div class="mx-auto max-w-[920px] text-center">
+        <h1 class="mx-auto max-w-[920px] text-[2.2rem] leading-[1.05] md:text-[3.6rem]">
+          <span set:html={banner?.title} />
           {
-            banner?.content && (
-              <p class="mt-4" set:html={markdownify(banner.content)} />
-            )
+            banner?.rotating_phrases?.length ? (
+              <>
+                <br />
+                <span class="hero-rotator-wrap">
+                  <RotatingText phrases={banner.rotating_phrases} client:load />
+                </span>
+              </>
+            ) : null
           }
+        </h1>
 
-          {
-            banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={banner.button.link}>
-                {banner.button.label}
-              </a>
-            )
-          }
-
-          {
-            banner?.image && (
-              <Image
-                class="mx-auto mt-12"
-                src={banner?.image}
-                width={750}
-                height={390}
-                alt="banner image"
-              />
-            )
-          }
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="section bg-light">
-    <div class="container">
-      <div class="text-center">
-        <h2>{markdownify(feature.title)}</h2>
-      </div>
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
         {
-          feature.features.map((item) => (
-            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
-              {item.icon && (
-                <Image
-                  class="mx-auto"
-                  alt={item.icon}
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                />
-              )}
-              <div class="mt-4">
-                <p class="h5" set:html={markdownify(item.name)} />
-                <p class="mt-3">{item.content}</p>
-              </div>
+          banner?.content && (
+            <div
+              class="mx-auto mt-6 max-w-[720px] text-base leading-8 md:text-lg"
+              set:html={markdownify(banner.content, true)}
+            />
+          )
+        }
+
+        {
+          banner?.subtitle && (
+            <p
+              class="mx-auto mt-4 max-w-[680px] font-secondary text-base font-semibold text-text-dark"
+              set:html={markdownify(banner.subtitle)}
+            />
+          )
+        }
+
+        {banner?.note && <p class="mt-3 text-sm italic text-secondary">{banner.note}</p>}
+
+        {
+          banner?.button?.enable && (
+            <div class="mt-6">
+              <ActionButton
+                variant="outline-primary"
+                href={banner.button.link}
+                label={banner.button.label}
+              />
             </div>
-          ))
+          )
         }
       </div>
     </div>
   </section>
 
-  <!-- Services -->
   {
-    services!.map((service, index) => {
-      const isOdd = index % 2 > 0;
-      return (
-        <section class={`section ${isOdd && "bg-light"}`}>
-          <div class="container">
-            <div class="items-center gap-8 md:grid md:grid-cols-2">
-              <div class={`service-carousel ${!isOdd && "md:order-2"}`}>
-                {service!.images!.length > 1 ? (
-                  <Swiper class=".service-carousel" options={swiperOptions}>
-                    <SwiperWrapper>
-                      {service.images?.map((image) => (
-                        <SwiperSlide>
-                          <Image
-                            class="mx-auto"
-                            src={image}
-                            width={538}
-                            height={328}
-                            alt=""
-                          />
-                        </SwiperSlide>
-                      ))}
-                    </SwiperWrapper>
-                    <SwiperPagination class="pagination" />
-                  </Swiper>
-                ) : (
-                  <Image
-                    class="mx-auto"
-                    src={service!.images![0]}
-                    width={538}
-                    height={328}
-                    alt=""
-                  />
-                )}
-              </div>
+    audience_tabs?.items?.length && (
+      <section class="section bg-white/65 py-10 md:py-12 backdrop-blur-[1px]">
+        <div class="container">
+          <AudienceTabs items={audience_tabs.items} client:load />
+        </div>
+      </section>
+    )
+  }
 
-              {/* Content */}
-              <div
-                class={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"}`}
-              >
-                <h2 class="font-bold leading-[40px]">{service?.title}</h2>
-                <p class="mt-4 mb-2">{service?.content}</p>
-                {service?.button?.enable && (
-                  <a
-                    href={service?.button.link}
-                    class="cta-link inline-flex items-center text-primary"
-                  >
-                    {service?.button.label}
-                    <img
-                      class="ml-1"
-                      src="/images/arrow-right.svg"
-                      width={18}
-                      height={14}
-                      alt="arrow"
-                    />
-                  </a>
-                )}
+  {
+    how_it_works && (
+      <section class="section bg-transparent">
+        <div class="container grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            {how_it_works.eyebrow && <p class="eyebrow">{how_it_works.eyebrow}</p>}
+            <h2 class="max-w-[560px]" set:html={how_it_works.title} />
+
+            <div class="step-list mt-6 space-y-4">
+              {how_it_works.steps.map((step) => (
+                <div class="step-list-item">
+                  <p class="font-primary text-lg font-semibold text-text-dark">{step.title}</p>
+                  <p class="mt-1">{step.content}</p>
+                </div>
+              ))}
+            </div>
+
+            {
+              how_it_works.note && (
+                <p class="mt-5 max-w-[620px] font-secondary text-sm italic text-text-dark">
+                  {how_it_works.note}
+                </p>
+              )
+            }
+
+            {
+              how_it_works.button?.enable && (
+                <ActionButton
+                  className="mt-6"
+                  href={how_it_works.button.link}
+                  label={how_it_works.button.label}
+                />
+              )
+            }
+          </div>
+
+          <div class="home-surface">
+            <ImageCarousel
+              images={how_it_works.images || (how_it_works.image ? [how_it_works.image] : [])}
+              altPrefix="Career Clarity assessment preview"
+              client:load
+            />
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    profile_highlights && (
+      <section class="section bg-white/60 backdrop-blur-[1px]">
+        <div class="container grid items-center gap-10 lg:grid-cols-2">
+          <div class="order-2 lg:order-1">
+            {(profile_highlights.images?.length || profile_highlights.image) && (
+              <div class="home-surface">
+                <ImageCarousel
+                  images={profile_highlights.images || (profile_highlights.image ? [profile_highlights.image] : [])}
+                  altPrefix="Career profile insight"
+                  client:load
+                />
               </div>
+            )}
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <h2 class="max-w-[620px]" set:html={profile_highlights.title} />
+            {
+              profile_highlights.description && (
+                <p class="mt-4 max-w-[620px]">{profile_highlights.description}</p>
+              )
+            }
+
+            <div class="mt-6 space-y-4">
+              {profile_highlights.items.map((item, index) => (
+                <div class="profile-point">
+                  <div class="profile-point-number">{index + 1}</div>
+                  <div>
+                    <p class="font-primary text-lg font-semibold text-text-dark">{item.title}</p>
+                    <p class="mt-1">{item.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {
+              profile_highlights.button?.enable && (
+                <ActionButton
+                  className="mt-6"
+                  href={profile_highlights.button.link}
+                  label={profile_highlights.button.label}
+                />
+              )
+            }
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    call_to_action && (
+      <section class="section bg-[#EEF2F7]/80 backdrop-blur-[1px]">
+        <div class="container">
+          <div class="mx-auto max-w-[760px] text-center">
+            <h2 class="mx-auto max-w-[700px]" set:html={call_to_action.title} />
+            {
+              call_to_action.content && (
+                <p class="mx-auto mt-4 max-w-[620px]">{call_to_action.content}</p>
+              )
+            }
+            {
+              call_to_action.button?.enable && (
+                <ActionButton
+                  className="mt-6"
+                  href={call_to_action.button.link}
+                  label={call_to_action.button.label}
+                />
+              )
+            }
+            <p class="mt-4 text-sm text-text">No credit card required. Private &amp; secure.</p>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    testimonial && (
+      <section class="hero-pattern section pt-10">
+        <div class="container">
+          <div class="mx-auto max-w-[920px] text-center">
+            {testimonial.title && <h3 class="h4">{testimonial.title}</h3>}
+            <div class="mt-6 rounded-[20px] border border-border bg-white px-6 py-8 shadow-[0_24px_60px_-42px_rgba(23,20,58,0.45)] md:px-10">
+              <p class="quote-mark">“</p>
+              <p class="mx-auto max-w-[760px] text-base md:text-lg">{testimonial.quote}</p>
+              <p class="mt-4 text-[#F3B63F]">★★★★★</p>
+              {testimonial.image && (
+                <Image
+                  class="mx-auto mt-5 h-14 w-14 rounded-full object-cover"
+                  src={testimonial.image}
+                  width={112}
+                  height={112}
+                  alt={testimonial.author}
+                />
+              )}
+              <p class="mt-3 font-primary text-lg font-semibold text-text-dark">{testimonial.author}</p>
+              {testimonial.role && <p class="text-sm text-text">{testimonial.role}</p>}
             </div>
           </div>
-        </section>
-      );
-    })
+        </div>
+      </section>
+    )
   }
-  <!-- /End service -->
-
-  <!-- Workflow -->
-  <section class="section pb-0">
-    <div class="mb-8 text-center">
-      <h2
-        class="mx-auto max-w-[400px] font-bold leading-[44px]"
-        set:html={workflow?.title}
-      />
-      <p class="mt-3" set:html={workflow?.description} />
-    </div>
-    <Image
-      src={workflow!.image}
-      alt="workflow image"
-      width={1920}
-      height={414}
-    />
-  </section>
-
-  <!-- Call to Action -->
-  <Cta cta={call_to_action} />
 </Base>
