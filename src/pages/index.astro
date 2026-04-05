@@ -5,6 +5,7 @@ import ActionButton from "@/layouts/components/ActionButton.astro";
 import AudienceTabs from "@/layouts/components/AudienceTabs";
 import ImageCarousel from "@/layouts/components/ImageCarousel";
 import RotatingText from "@/layouts/components/RotatingText";
+import TestimonialCard from "@/layouts/components/TestimonialCard.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -217,25 +218,7 @@ const {
     testimonial && (
       <section class="hero-pattern section pt-10">
         <div class="container">
-          <div class="mx-auto max-w-[920px] text-center">
-            {testimonial.title && <h3 class="h4">{testimonial.title}</h3>}
-            <div class="mt-6 rounded-[20px] border border-border bg-white px-6 py-8 shadow-[0_24px_60px_-42px_rgba(23,20,58,0.45)] md:px-10">
-              <p class="quote-mark">“</p>
-              <p class="mx-auto max-w-[760px] text-base md:text-lg">{testimonial.quote}</p>
-              <p class="mt-4 text-[#F3B63F]">★★★★★</p>
-              {testimonial.image && (
-                <Image
-                  class="mx-auto mt-5 h-14 w-14 rounded-full object-cover"
-                  src={testimonial.image}
-                  width={112}
-                  height={112}
-                  alt={testimonial.author}
-                />
-              )}
-              <p class="mt-3 font-primary text-lg font-semibold text-text-dark">{testimonial.author}</p>
-              {testimonial.role && <p class="text-sm text-text">{testimonial.role}</p>}
-            </div>
-          </div>
+          <TestimonialCard testimonial={testimonial} headingTag="h3" />
         </div>
       </section>
     )

@@ -1,0 +1,146 @@
+---
+import { Image } from "astro:assets";
+import ActionButton from "@/components/ActionButton.astro";
+import TestimonialCard from "@/components/TestimonialCard.astro";
+import { markdownify, plainify } from "@/lib/utils/textConverter";
+
+const { page } = Astro.props;
+const {
+  title,
+  intro,
+  hero,
+  detail_section,
+  feature_cards,
+  testimonial,
+  call_to_action,
+} = page.data;
+---
+
+<section class="section pt-10 md:pt-14">
+  <div class="container">
+    <div class="audience-page-heading">
+      <h1 class="h1" set:html={markdownify(title)} />
+      {intro && <p class="mt-4" set:html={markdownify(intro)} />}
+    </div>
+
+    {
+      hero && (
+        <div class="audience-section-card mt-10 md:mt-12">
+          <div class="audience-feature-grid audience-feature-grid-balanced">
+            <div class="audience-feature-copy">
+              <h2 class="max-w-[460px]" set:html={markdownify(hero.title)} />
+              <div
+                class="mt-4 max-w-[460px] space-y-3"
+                set:html={markdownify(hero.content, true)}
+              />
+
+              {hero.button?.enable !== false && hero.button?.label && (
+                <ActionButton
+                  className="mt-6"
+                  href={hero.button.link}
+                  label={hero.button.label}
+                />
+              )}
+            </div>
+
+            {hero.image && (
+              <div class="audience-feature-image">
+                <Image
+                  src={hero.image}
+                  width={1200}
+                  height={900}
+                  alt={plainify(hero.title)}
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    {
+      detail_section && (
+        <div class="audience-section-card mt-7 md:mt-8">
+          <div class="audience-detail-grid">
+            {detail_section.image && (
+              <div class="audience-detail-image-wrap">
+                <div class="audience-detail-image audience-detail-image-large">
+                  <Image
+                    src={detail_section.image}
+                    width={800}
+                    height={800}
+                    alt={plainify(detail_section.title)}
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+            )}
+
+            <div>
+              <h2 class="max-w-[520px]" set:html={markdownify(detail_section.title)} />
+              {detail_section.content && (
+                <div
+                  class="mt-4 max-w-[560px]"
+                  set:html={markdownify(detail_section.content, true)}
+                />
+              )}
+
+              {detail_section.bullets?.length ? (
+                <ul class="audience-bullet-list mt-4">
+                  {detail_section.bullets.map((bullet) => (
+                    <li set:html={markdownify(bullet)} />
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      feature_cards?.length ? (
+        <div class="audience-card-grid mt-5 md:mt-6">
+          {feature_cards.map((card) => (
+            <div class="audience-mini-card">
+              <h3 class="h5">{card.title}</h3>
+              <p class="mt-3">{card.content}</p>
+            </div>
+          ))}
+        </div>
+      ) : null
+    }
+
+    {
+      testimonial && (
+        <section class="section pt-12 pb-8 md:pt-16">
+          <TestimonialCard testimonial={testimonial} headingTag="h2" />
+        </section>
+      )
+    }
+
+    {
+      call_to_action && (
+        <section class="pb-8 md:pb-12">
+          <div class="audience-page-heading">
+            <h2 class="mx-auto max-w-[780px]" set:html={markdownify(call_to_action.title)} />
+            {call_to_action.content && (
+              <p class="mt-4" set:html={markdownify(call_to_action.content)} />
+            )}
+
+            {call_to_action.button?.enable !== false && call_to_action.button?.label && (
+              <ActionButton
+                className="mt-6"
+                href={call_to_action.button.link}
+                label={call_to_action.button.label}
+              />
+            )}
+
+            {call_to_action.note && <p class="mt-4 text-sm text-text">{call_to_action.note}</p>}
+          </div>
+        </section>
+      )
+    }
+  </div>
+</section>

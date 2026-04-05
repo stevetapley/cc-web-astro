@@ -245,6 +245,61 @@ const pagesCollection = defineCollection({
     description: z.string().optional(),
     image: z.string().optional(),
     draft: z.boolean().optional(),
+    template: z.enum(["audience"]).optional(),
+    intro: z.string().optional(),
+    hero: z
+      .object({
+        title: z.string(),
+        content: z.string(),
+        image: z.string().optional(),
+        button: z
+          .object({
+            label: z.string(),
+            link: z.string().default("/contact"),
+            enable: z.boolean().default(true),
+          })
+          .optional(),
+      })
+      .optional(),
+    detail_section: z
+      .object({
+        title: z.string(),
+        content: z.string().optional(),
+        image: z.string().optional(),
+        bullets: z.array(z.string()).optional(),
+      })
+      .optional(),
+    feature_cards: z
+      .array(
+        z.object({
+          title: z.string(),
+          content: z.string(),
+        }),
+      )
+      .optional(),
+    testimonial: z
+      .object({
+        title: z.string().optional(),
+        quote: z.string(),
+        author: z.string(),
+        role: z.string().optional(),
+        image: z.string().optional(),
+      })
+      .optional(),
+    call_to_action: z
+      .object({
+        title: z.string(),
+        content: z.string().optional(),
+        note: z.string().optional(),
+        button: z
+          .object({
+            label: z.string(),
+            link: z.string().default("/contact"),
+            enable: z.boolean().default(true),
+          })
+          .optional(),
+      })
+      .optional(),
   }),
 });
 

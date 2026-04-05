@@ -1,0 +1,20 @@
+---
+title: 'Lead the <span class="text-primary">human</span>, not just the "resource".'
+meta_title: "For team leaders | Career Clarity"
+description: "See what is energising or draining your people so you can lead with more clarity and less guesswork."
+image: "/images/portfolio3.jpg"
+draft: false
+template: "audience"
+intro: "Leading well means understanding the human behind the role — not just the output. Career Clarity helps you spot where motivation, values, and the way work is set up are starting to pull against each other."
+hero:
+  title: "We're working on this..."
+  content: >-
+    We’re still building out this part of the site. Get in touch with us at
+    [hello@careerclarity.app](mailto:hello@careerclarity.app) if you would like more information,
+    early access, or want to hear when a waitlist opens.
+  image: /images/portfolio3.jpg
+  button:
+    enable: true
+    label: Try it for myself
+    link: https://my.careerclarity.app/
+---

@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+
+interface TestimonialData {
+  title?: string;
+  quote: string;
+  author: string;
+  role?: string;
+  image?: string;
+}
+
+interface Props {
+  testimonial: TestimonialData;
+  headingTag?: "h2" | "h3";
+  className?: string;
+}
+
+const {
+  testimonial,
+  headingTag = "h2",
+  className = "",
+} = Astro.props as Props;
+
+const HeadingTag = headingTag;
+---
+
+<div class={`mx-auto max-w-[920px] text-center ${className}`.trim()}>
+  {testimonial.title && <HeadingTag class="h4">{testimonial.title}</HeadingTag>}
+  <div class="audience-testimonial-card mt-6">
+    <p class="quote-mark">“</p>
+    <p class="mx-auto max-w-[760px] text-base md:text-lg">{testimonial.quote}</p>
+    <p class="mt-4 text-[#F3B63F]">★★★★★</p>
+    {testimonial.image && (
+      <Image
+        class="mx-auto mt-5 h-14 w-14 rounded-full object-cover"
+        src={testimonial.image}
+        width={112}
+        height={112}
+        alt={testimonial.author}
+      />
+    )}
+    <p class="mt-3 font-primary text-lg font-semibold text-text-dark">{testimonial.author}</p>
+    {testimonial.role && <p class="text-sm text-text">{testimonial.role}</p>}
+  </div>
+</div>

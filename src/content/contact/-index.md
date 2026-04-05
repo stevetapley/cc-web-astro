@@ -1,12 +1,12 @@
 ---
-title: "Contact Us"
-description: "meta description"
+title: "Connect with us"
+description: "Talk to Career Clarity about the product, early access, or how it could support you or your team."
 draft: false
 info:
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: Get in touch
+  description: Whether you have a question, want to explore early access, or want to discuss team and hiring use cases, we'd love to hear from you.
   contacts:
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "Mail: [hello@careerclarity.app](mailto:hello@careerclarity.app)"
+    - "Product: [my.careerclarity.app](https://my.careerclarity.app/)"
+    - "Use the form and we'll get back to you as soon as we can."
 ---

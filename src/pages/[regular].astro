@@ -1,5 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
+import AudiencePage from "@/components/AudiencePage.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
@@ -17,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, meta_title, description, image } = page.data;
+const { title, meta_title, description, image, template } = page.data;
 const { Content } = await render(page);
 ---
 
@@ -27,12 +28,18 @@ const { Content } = await render(page);
   description={description}
   image={image}
 >
-  <section class="section">
-    <div class="container">
-      <h1 set:html={markdownify(title)} class="h2 mb-8 text-center" />
-      <div class="content">
-        <Content />
-      </div>
-    </div>
-  </section>
+  {
+    template === "audience" ? (
+      <AudiencePage page={page} />
+    ) : (
+      <section class="section">
+        <div class="container">
+          <h1 set:html={markdownify(title)} class="h2 mb-8 text-center" />
+          <div class="content">
+            <Content />
+          </div>
+        </div>
+      </section>
+    )
+  }
 </Base>
