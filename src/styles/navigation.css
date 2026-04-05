@@ -20,7 +20,11 @@
 }
 
 #nav-menu {
-  @apply w-full overflow-hidden md:max-h-full md:w-auto;
+  @apply w-full overflow-hidden md:max-h-full md:w-auto md:overflow-visible;
+}
+
+.nav-item {
+  @apply relative;
 }
 
 .nav-item select:focus {
@@ -33,4 +37,61 @@
 
 .nav-link-active {
   @apply text-primary;
+}
+
+.nav-dropdown summary {
+  list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown {
+  @apply relative;
+}
+
+.nav-dropdown-toggle {
+  @apply inline-flex cursor-pointer items-center gap-1 select-none;
+}
+
+.nav-dropdown-icon {
+  @apply transition-transform duration-200;
+}
+
+.nav-dropdown[open] .nav-dropdown-icon {
+  @apply rotate-180;
+}
+
+.nav-dropdown-list {
+  @apply mt-2 hidden space-y-1 rounded-2xl border border-border bg-white p-2 text-left shadow-[0_18px_40px_-28px_rgba(23,20,58,.45)];
+}
+
+.nav-dropdown[open] .nav-dropdown-list {
+  @apply block;
+}
+
+.nav-dropdown-link {
+  @apply block rounded-xl px-3 py-2 font-secondary text-sm font-medium text-text transition-colors hover:bg-light hover:text-primary;
+}
+
+@media (min-width: 768px) {
+  .nav-dropdown-list {
+    @apply absolute left-0 top-full z-[60] mt-1 min-w-[220px];
+  }
+
+  .nav-dropdown:hover .nav-dropdown-list,
+  .nav-dropdown:focus-within .nav-dropdown-list {
+    @apply block;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-dropdown-toggle {
+    @apply w-full justify-center;
+  }
+
+  .nav-dropdown-list {
+    @apply mb-2 mt-0 rounded-xl border-0 bg-light/50 shadow-none;
+  }
 }

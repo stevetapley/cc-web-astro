@@ -6,6 +6,12 @@ import menu from "@/config/menu.json";
 
 const pathname = Astro.url.pathname;
 
+const isLinkActive = (url: string) =>
+  pathname === url || (url !== "/" && pathname.startsWith(`${url}/`));
+
+const isChildActive = (children?: ChildNavigationLink[]) =>
+  children?.some((child) => isLinkActive(child.url)) ?? false;
+
 export interface ChildNavigationLink {
   name: string;
   url: string;
@@ -58,45 +64,60 @@ const { main }: { main: NavigationLink[] } = menu;
       class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
     >
       {
-        main.map((menu) => (
-          <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative">
-                <span class="nav-link inline-flex items-center">
-                  {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a
-                        href={child.url}
-                        class={`nav-dropdown-link block ${
-                          pathname === child.url && "nav-link-active"
-                        }`}
-                      >
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ) : (
-              <li class="nav-item">
-                <a
-                  href={menu.url}
-                  class={`nav-link block ${
-                    pathname === menu.url && "nav-link-active"
-                  }`}
-                >
-                  {menu.name}
-                </a>
-              </li>
-            )}
-          </>
-        ))
+        main.map((menu) => {
+          const parentActive = menu.hasChildren
+            ? isChildActive(menu.children)
+            : isLinkActive(menu.url);
+
+          return (
+            <>
+              {menu.hasChildren ? (
+                <li class="nav-item">
+                  <details class="nav-dropdown group relative">
+                    <summary
+                      class={`nav-link nav-dropdown-toggle ${
+                        parentActive ? "nav-link-active" : ""
+                      }`}
+                    >
+                      <span>{menu.name}</span>
+                      <svg class="nav-dropdown-icon h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </summary>
+
+                    <ul class="nav-dropdown-list">
+                      {menu.children?.map((child) => (
+                        <li class="nav-dropdown-item">
+                          <a
+                            href={child.url}
+                            data-nav-link
+                            class={`nav-dropdown-link ${
+                              isLinkActive(child.url) ? "nav-link-active" : ""
+                            }`}
+                          >
+                            {child.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                <li class="nav-item">
+                  <a
+                    href={menu.url}
+                    data-nav-link
+                    class={`nav-link block ${
+                      isLinkActive(menu.url) ? "nav-link-active" : ""
+                    }`}
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              )}
+            </>
+          );
+        })
       }
       {
         nav_button.enable && (
@@ -124,4 +145,31 @@ const { main }: { main: NavigationLink[] } = menu;
       )
     }
   </nav>
+  <script is:inline>
+    if (!window.__careerClarityNavInit) {
+      window.__careerClarityNavInit = true;
+
+      const closeNavMenus = () => {
+        document
+          .querySelectorAll(".nav-dropdown[open]")
+          .forEach((dropdown) => dropdown.removeAttribute("open"));
+
+        const navToggle = document.getElementById("nav-toggle");
+        if (navToggle && "checked" in navToggle) {
+          navToggle.checked = false;
+        }
+      };
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+
+        if (target.closest("[data-nav-link]")) {
+          closeNavMenus();
+        }
+      });
+
+      document.addEventListener("astro:after-swap", closeNavMenus);
+    }
+  </script>
 </header>
