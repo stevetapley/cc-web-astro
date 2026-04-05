@@ -1,9 +1,20 @@
 ---
 banner:
   title: Stop guessing what your next right move might be
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil
-    enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio
-    modi neque laborum officiis necessitatibus
+  content: >-
+    We spend 90,000 hours of our lives at work - yet most of us are running on
+    autopilot.
+
+
+    In just five minutes, Career Clarity reveals what actually energises you at
+    work - and what's quietly draining you.
+
+
+    **No quizzes. No vague archetypes. Just a clear profile of your real
+    drivers.**
+
+
+    _Free during early access - no card required_
   image: /images/banner-art.png
   button:
     enable: true
@@ -35,20 +46,33 @@ feature:
 
 # services
 services:
-  - title: It is the most advanced digital marketing and it company.
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-      tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra
-      tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit.
-      Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc
-      viverra tellus. Ac laoreet sit vel consquat.
+  - title: Clarity in three **simple** steps
+    content: >-
+      Reflect: Spend 5 minutes answering intuitive questions that bypass your
+      "polite" autopilot answers.
+
+       
+      • Rank: Rate each factor on a simple scale — from 'doesn't matter' to
+      'truly essential' - across culture, professional fit, personal life and
+      compensation. 20 factors - no wrong answers.
+
+       
+
+      • Reveal: Get your career profile: a personalised map of what drives you,
+      what your current role is missing, and five specific next steps.
+
+       
+
+      Your profile also unlocks an AI Clarity Coach - ask it anything about your
+      results, your role, your manager, or your next move.
     images:
       - /images/service-slide-1.png
       - /images/service-slide-2.png
       - /images/service-slide-3.png
     button:
       enable: true
-      label: Check it out
-      link: /contact
+      label: See what actually matters to me
+      link: my.careerclarity.app
   - title: It is a privately owned Information and cyber security company
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
       tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra
@@ -112,5 +136,3 @@ call_to_action:
 bb
 
 vv
-
-​
