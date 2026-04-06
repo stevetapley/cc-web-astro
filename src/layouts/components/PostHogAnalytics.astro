@@ -1,0 +1,88 @@
+---
+const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY;
+const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com";
+---
+
+{
+  posthogKey && (
+    <script is:inline define:vars={{ posthogKey, posthogHost }}>
+      (async () => {
+        if (!posthogKey || window.__careerClarityPostHogInitialized) return;
+        window.__careerClarityPostHogInitialized = true;
+
+        const normalizedPosthogHost = posthogHost.replace(/\/$/, "");
+
+        const loadScript = () =>
+          new Promise((resolve, reject) => {
+            if (window.posthog?.init) {
+              resolve(window.posthog);
+              return;
+            }
+
+            const script = document.createElement("script");
+            script.src = `${normalizedPosthogHost}/static/array.js`;
+            script.async = true;
+            script.onload = () => resolve(window.posthog);
+            script.onerror = reject;
+            document.head.appendChild(script);
+          });
+
+        try {
+          await loadScript();
+
+          if (!window.posthog?.init) return;
+
+          window.posthog.init(posthogKey, {
+            api_host: normalizedPosthogHost,
+            capture_pageview: false,
+            capture_pageleave: true,
+            autocapture: false,
+            disable_session_recording: true,
+            person_profiles: "identified_only",
+            cross_subdomain_cookie: true,
+          });
+
+          window.posthog.register({
+            site_area: "marketing-site",
+            site_host: window.location.host,
+          });
+
+          const capturePageview = () => {
+            window.posthog?.capture("$pageview", {
+              pathname: window.location.pathname,
+              url: window.location.href,
+              page_title: document.title,
+            });
+          };
+
+          const captureClick = (event) => {
+            const target =
+              event.target instanceof Element
+                ? event.target.closest("a.btn, button.btn, [data-analytics-event]")
+                : null;
+
+            if (!target) return;
+
+            const eventName = target.getAttribute("data-analytics-event") || "cta_clicked";
+            const href = target.getAttribute("href") || "";
+            const label =
+              target.getAttribute("data-analytics-label") || target.textContent?.trim() || "";
+
+            window.posthog?.capture(eventName, {
+              label,
+              href,
+              pathname: window.location.pathname,
+              external: href.startsWith("http") || href.startsWith("mailto:"),
+            });
+          };
+
+          document.addEventListener("click", captureClick);
+          document.addEventListener("astro:page-load", capturePageview);
+          capturePageview();
+        } catch (error) {
+          console.warn("PostHog failed to load", error);
+        }
+      })();
+    </script>
+  )
+}
