@@ -16,7 +16,7 @@ if (entry?.data?.draft) {
 const { title, description, plans, call_to_action } = entry.data;
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} noindex={true}>
   <section class="section pb-0">
     <div class="container">
       <h1 class="text-center font-normal">{title}</h1>

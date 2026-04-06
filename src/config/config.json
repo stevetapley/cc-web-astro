@@ -28,9 +28,5 @@
     "meta_author": "Career Clarity",
     "meta_image": "/images/og-image.png",
     "meta_description": "Career Clarity helps individuals, leaders, HR teams, and recruiters understand what energises people at work — and what’s quietly draining them."
-  },
-  "google_tag_manager": {
-    "enable": false,
-    "gtm_id": "GTM-XXXXXX"
   }
 }

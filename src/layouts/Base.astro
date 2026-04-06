@@ -47,20 +47,6 @@ const socialImage = `${config.site.base_url}${
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- google tag manager -->
-    {
-      config.google_tag_manager.enable &&
-        config.google_tag_manager.gtm_id && (
-          <script
-            is:inline
-            set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${config.google_tag_manager.gtm_id}');`}
-          />
-        )
-    }
     <!-- favicons -->
     <link rel="icon" href="/images/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -68,7 +54,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
     <link rel="manifest" href="/images/site.webmanifest" />
     <!-- theme meta -->
-    <meta name="theme-name" content="astroplate" />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta
       name="theme-color"
@@ -138,21 +123,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    {/* google tag manager noscript */}
-    {
-      config.google_tag_manager.enable &&
-        config.google_tag_manager.gtm_id && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${config.google_tag_manager.gtm_id}`}
-              height="0"
-              width="0"
-              style="display:none;visibility:hidden"
-            />
-          </noscript>
-        )
-    }
-
     <TwSizeIndicator />
     <Header />
     <main id="main-content" class="site-main">

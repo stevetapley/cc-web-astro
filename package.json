@@ -1,9 +1,7 @@
 {
-  "name": "bigspring-light-astro",
-  "version": "4.0.1",
-  "description": "astro personal blog theme",
-  "author": "themefisher",
-  "license": "MIT",
+  "name": "career-clarity-website",
+  "version": "1.0.0",
+  "author": "career clarity",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
