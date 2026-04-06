@@ -286,7 +286,7 @@
 }
 
 .hero-rotator-wrap {
-  @apply mt-2 inline-flex min-h-[1.2em] items-center justify-center text-text-dark;
+  @apply mt-2 block min-h-[2.2em] text-[0.94em] leading-[1.02] text-text-dark sm:min-h-[1.2em] sm:text-[0.92em];
 }
 
 .rotating-text {
@@ -456,7 +456,88 @@
   @apply rounded-[20px] border border-border bg-white px-6 py-8 shadow-[0_24px_60px_-42px_rgba(23,20,58,0.45)] md:px-10;
 }
 
+@media (max-width: 767px) {
+  .audience-tabs {
+    @apply gap-4;
+  }
+
+  .audience-tab-button {
+    @apply px-3 py-3 text-[13px];
+  }
+
+  .audience-panel {
+    @apply min-h-0 px-0;
+  }
+
+  .step-list-item,
+  .profile-point,
+  .audience-mini-card {
+    @apply px-4 py-4;
+  }
+
+  .home-surface {
+    @apply p-2;
+  }
+
+  .image-carousel-thumbs {
+    @apply grid-cols-3;
+  }
+
+  .audience-section-card {
+    @apply p-3;
+  }
+
+  .audience-feature-grid,
+  .audience-detail-grid {
+    @apply gap-4;
+  }
+
+  .audience-feature-image {
+    @apply max-w-full;
+  }
+
+  .audience-feature-image img {
+    @apply min-h-0 aspect-[1.18/1];
+  }
+
+  .audience-detail-image-wrap {
+    @apply justify-center;
+  }
+
+  .audience-detail-image,
+  .audience-detail-image-large {
+    @apply w-full max-w-[160px];
+  }
+
+  .audience-card-grid {
+    @apply gap-3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .audience-feature-grid,
+  .audience-feature-grid-balanced {
+    @apply grid-cols-1 gap-6;
+  }
+
+  .audience-feature-image {
+    @apply max-w-[520px];
+  }
+
+  .audience-detail-grid {
+    @apply grid-cols-[180px_minmax(0,1fr)] gap-5;
+  }
+
+  .audience-card-grid {
+    @apply grid-cols-1 gap-4;
+  }
+}
+
 /* contact page */
+.contact-page-heading h1 {
+  @apply text-[2.3rem] sm:text-[2.8rem] md:text-[3rem];
+}
+
 .contact-panel {
   @apply grid gap-6 rounded-[26px] border border-border bg-white/70 p-5 shadow-[0_24px_60px_-46px_rgba(23,20,58,.45)] backdrop-blur-[1px] md:p-8 lg:grid-cols-[1.2fr_0.8fr];
 }
@@ -483,4 +564,32 @@
 
 .waitlist-placeholder {
   @apply rounded-xl border border-border bg-white/75 p-4;
+}
+
+@media (max-width: 767px) {
+  .contact-page-heading h1 {
+    @apply text-[2rem] leading-[1.05];
+  }
+
+  .contact-panel {
+    @apply mt-8 rounded-[22px] p-3;
+  }
+
+  .contact-panel-copy {
+    @apply p-4;
+  }
+
+  .contact-list-modern li {
+    @apply px-4 py-4 text-[15px] leading-7;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-panel {
+    @apply gap-5 p-6;
+  }
+
+  .contact-panel-copy {
+    @apply max-w-[640px];
+  }
 }
