@@ -27,6 +27,20 @@ export interface Props {
 // destructure frontmatter
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+const siteTitle = plainify(config.site.title);
+const resolvedTitle = plainify(
+  meta_title ? meta_title : title ? `${title} | ${siteTitle}` : siteTitle,
+);
+const resolvedDescription = plainify(
+  description ? description : config.metadata.meta_description,
+);
+const canonicalUrl = canonical
+  ? canonical
+  : new URL(Astro.url.pathname, config.site.base_url).toString();
+const socialImage = `${config.site.base_url}${
+  image ? image : config.metadata.meta_image
+}`;
 ---
 
 <!doctype html>
@@ -79,23 +93,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
 
     <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
+    <title>{resolvedTitle}</title>
 
     <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+    <link rel="canonical" href={canonicalUrl} item-prop="url" />
 
     <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <meta name="robots" content={noindex ? "noindex,nofollow" : "index,follow"} />
 
     <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+    <meta name="description" content={resolvedDescription} />
 
     <ClientRouter />
 
@@ -103,57 +110,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="author" content={config.metadata.meta_author} />
 
     <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
+    <meta property="og:title" content={resolvedTitle} />
 
     <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+    <meta property="og:description" content={resolvedDescription} />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:url" content={canonicalUrl} />
 
     <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
+    <meta name="twitter:title" content={resolvedTitle} />
 
     <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+    <meta name="twitter:description" content={resolvedDescription} />
 
     <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    <meta property="og:image" content={socialImage} />
 
     <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:site" content="@careerclarityapp" />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
