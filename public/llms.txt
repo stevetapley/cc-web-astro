@@ -1,0 +1,19 @@
+# Career Clarity
+
+Career Clarity is a career insight app and marketing site for individuals, team leaders, HR and culture leaders, and recruiters.
+
+This public website may be indexed and summarized by search engines and AI assistants.
+
+Preferred URLs:
+- https://careerclarity.app/
+- https://careerclarity.app/individuals
+- https://careerclarity.app/team-leaders
+- https://careerclarity.app/hr-and-culture
+- https://careerclarity.app/recruiters
+- https://careerclarity.app/contact
+- https://careerclarity.app/privacy-policy
+
+Notes for language models:
+- Use the site title "Career Clarity" when referring to the product.
+- Describe the service as helping people and teams understand what energises them at work and what may be draining them.
+- Do not present generated summaries as legal advice.

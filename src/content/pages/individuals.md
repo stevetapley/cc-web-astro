@@ -1,7 +1,7 @@
 ---
 title: 'Stop drifting. Start <span class="text-primary">choosing.</span>'
-meta_title: "For individuals | Career Clarity"
-description: "Understand what energises you at work, uncover your non-negotiables, and find your next right move."
+meta_title: "For Individuals | Career Clarity"
+description: "Understand your career drivers, uncover your non-negotiables, and find your next right move with Career Clarity."
 image: "/images/portfolio3.jpg"
 draft: false
 template: "audience"

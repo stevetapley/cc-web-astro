@@ -1,7 +1,7 @@
 ---
 title: 'The secret <span class="text-primary">weapon</span> for long-term placements.'
-meta_title: "For recruiters | Career Clarity"
-description: "Look beyond the CV and understand the values, dealbreakers, and working style that drive long-term candidate fit."
+meta_title: "For Recruiters | Career Clarity"
+description: "Look beyond the CV and understand candidate motivators, dealbreakers, and long-term fit before placement."
 image: "/images/portfolio3.jpg"
 draft: false
 template: "audience"

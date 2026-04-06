@@ -16,6 +16,9 @@ const homepage = (await getEntry(
 )) as CollectionEntry<"homepage">;
 
 const {
+  meta_title,
+  description: homepageDescription,
+  image: homepageImage,
   banner,
   audience_tabs,
   how_it_works,
@@ -25,7 +28,12 @@ const {
 } = homepage.data;
 ---
 
-<Base>
+<Base
+  title="Career Clarity"
+  meta_title={meta_title}
+  description={homepageDescription}
+  image={homepageImage}
+>
   <section class="hero-pattern section pb-12 pt-8 md:pt-14">
     <div class="container">
       <div class="mx-auto max-w-[920px] text-center">

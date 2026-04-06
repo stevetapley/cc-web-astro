@@ -9,10 +9,10 @@ const entry = (await getEntry(
   "contact",
   "-index"
 )) as CollectionEntry<"contact">;
-const { title, description, info } = entry.data;
+const { title, meta_title, description, image, info } = entry.data;
 ---
 
-<Base title={title} description={description}>
+<Base title={title} meta_title={meta_title} description={description} image={image}>
   <section class="section pt-10 md:pt-14">
     <div class="container">
       <div class="audience-page-heading contact-page-heading">

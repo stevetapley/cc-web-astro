@@ -68,7 +68,7 @@ const AudienceTabs = ({ items }: { items: AudienceTabItem[] }) => {
         )}
 
         {activeItem.note && (
-          <p className="mt-4 max-w-[720px] text-sm text-text">{activeItem.note}</p>
+          <p className="audience-tab-note mt-4 max-w-[720px] text-sm">{activeItem.note}</p>
         )}
 
         {activeItem.button?.enable !== false && activeItem.button?.label && (

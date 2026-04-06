@@ -1,7 +1,7 @@
 ---
 title: 'Lead the <span class="text-primary">human</span>, not just the "resource".'
-meta_title: "For team leaders | Career Clarity"
-description: "See what is energising or draining your people so you can lead with more clarity and less guesswork."
+meta_title: "For Team Leaders | Career Clarity"
+description: "See what is energising or draining your people so you can lead with more clarity, alignment, and retention."
 image: "/images/portfolio3.jpg"
 draft: false
 template: "audience"

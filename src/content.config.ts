@@ -6,6 +6,9 @@ import { z } from "astro/zod";
 const homepageCollection = defineCollection({
   loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/homepage" }),
   schema: z.object({
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    image: z.string().optional(),
     banner: z
       .object({
         title: z.string().optional(),
@@ -153,7 +156,9 @@ const contactCollection = defineCollection({
   loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/contact" }),
   schema: z.object({
     title: z.string(),
+    meta_title: z.string().optional(),
     description: z.string(),
+    image: z.string().optional(),
     draft: z.boolean(),
     info: z.object({
       title: z.string(),

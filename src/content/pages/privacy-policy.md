@@ -1,30 +1,66 @@
 ---
-title: "Privacy"
-meta_title: ""
-description: "this is meta description"
-draft: true
+title: "Privacy Policy"
+meta_title: "Privacy Policy | Career Clarity"
+description: "How Career Clarity collects, uses, stores, and protects your account, assessment, and service data."
+draft: false
 ---
 
-#### Responsibility of Contributors
+_Last updated: April 6, 2026_
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+> ### Plain English Summary
+>
+> We built Career Clarity to help you with your career, not to harvest your data. We only collect the information necessary to provide your analysis, such as your email to save your progress and your answers to generate results.
+>
+> We do not sell your personal data, we do not track you for third-party ads, and you remain in control of your information at all times.
+>
+> The details below are for legal compliance, but our philosophy is simple: we treat your data with the same respect we'd want for our own.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+### Privacy summary
 
-#### Gathering of Personal Information
+Career Clarity collects minimal personal data to provide and improve the service. This page explains what we collect, why we collect it, how we use it, with whom we share it, and how you can control it.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+### Data we collect
 
-#### Protection of Personal- Information
+- **Account identifiers** such as your email address or OAuth ID so we can authenticate you and tie assessments to your account.
+- **Assessment content** such as answers, ratings, comments, and generated analysis so we can provide your results.
+- **App usage data and diagnostics** such as crash reports, device type, and timestamps so we can maintain and improve the app.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+### How we use data
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+- Provide core features, including creating and storing assessments and showing your results.
+- Improve the product and personalize recommendations.
+- Run analytics and troubleshoot issues.
 
-#### Privacy Policy Changes
+### Sharing and third parties
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+We do not sell your personal data. We may share data with trusted third-party service providers for hosting, analytics, and AI processing, but only when they act on our behalf under contract.
+
+Where we use third-party providers to help run analysis features, only the minimum necessary data is shared, and those processors are contractually limited from using your data for other purposes.
+
+If you sign in with a social provider such as Google or Facebook, limited profile information from that provider is used for authentication and account creation. You can review and revoke provider permissions through the provider's account settings.
+
+### Retention
+
+We keep assessment data until you delete it or your account. You can request deletion of your account and associated data using the contact details below.
+
+### Security
+
+We use industry-standard safeguards, including encryption in transit and access controls, to protect your data. However, no system is 100% secure, so please avoid sharing highly sensitive personal information in assessment text fields.
+
+### Controls & choices
+
+- **Delete assessments:** You can delete individual assessments inside the app.
+- **Delete account:** Contact us to request full account and data deletion.
+- **Opt out of analytics:** You can disable analytics in app settings, if available, or contact support.
+
+### Children
+
+Career Clarity is not intended for children under 13, and we do not knowingly collect personal data from children under 13.
+
+### Contact
+
+For privacy questions or data deletion requests, contact [privacy@careerclarity.app](mailto:privacy@careerclarity.app).
+
+### Updates
+
+We may update this policy from time to time. For substantial changes, we will provide notice in the app or by email when appropriate.
