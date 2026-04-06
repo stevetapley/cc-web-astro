@@ -62,6 +62,10 @@
           "url": "/contact"
         },
         {
+          "text": "About",
+          "url": "/about"
+        },
+        {
           "text": "Privacy Policy",
           "url": "/privacy-policy"
         }

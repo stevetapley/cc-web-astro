@@ -8,7 +8,5 @@ info:
   title: Get in touch
   description: Whether you have a question, want to explore early access, or want to discuss team and hiring use cases, we'd love to hear from you.
   contacts:
-    - "Email: [hello@careerclarity.app](mailto:hello@careerclarity.app)"
-    - "We usually reply personally and can point you to the right next step."
-    - "Tell us whether you're enquiring as an individual, people leader, HR/culture lead, or recruiter."
+    - "Simply email us at [hello@careerclarity.app](mailto:hello@careerclarity.app)"
 ---
