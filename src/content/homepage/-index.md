@@ -78,10 +78,11 @@ how_it_works:
   eyebrow: How it works
   title: 'Clarity in three <span class="text-secondary">simple</span> steps'
   images:
-    - /images/2026-03-04_15-19-37.png
-    - /images/2026-03-04_15-24-01.png
-    - /images/2026-03-04_15-24-16.png
-    - /images/2026-03-04_15-47-41.png
+    - /images/platform-home-1.png
+    - /images/platform-analysis-1.png
+    - /images/platform-analysis-2.png
+    - /images/platform-analysis-3.png
+    - /images/platform-assessment-1.png
   steps:
     - title: Reflect
       content: Spend 5 minutes answering intuitive questions that bypass your polite autopilot answers.

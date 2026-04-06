@@ -2,7 +2,7 @@
 title: 'Stop drifting. Start <span class="text-primary">choosing.</span>'
 meta_title: "For Individuals | Career Clarity"
 description: "Understand your career drivers, uncover your non-negotiables, and find your next right move with Career Clarity."
-image: "/images/portfolio3.jpg"
+image: "/images/platform-home-1.png"
 draft: false
 template: "audience"
 intro: "Most of us adapt to whatever role we’re in. Career Clarity helps you stop adapting and start being deliberate about what you actually need."
@@ -13,7 +13,7 @@ hero:
     Most of us spend our careers masking to fit into environments that drain us.
 
     It’s time to stop adapting to every role and start finding one that adapts to you.
-  image: /images/portfolio3.jpg
+  image: /images/platform-analysis-1.png
   button:
     enable: true
     label: Uncover my drivers
@@ -43,7 +43,7 @@ testimonial:
 call_to_action:
   title: 'A career that <span class="text-secondary">gives</span> back more than it takes.'
   content: Stop drifting. Start choosing. 5 minutes to a better Monday morning.
-  note: No credit card required. Private &amp; secure.
+  note: No credit card required. Private & secure.
   button:
     enable: true
     label: Start your reflection — 5 minutes
