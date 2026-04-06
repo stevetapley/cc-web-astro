@@ -2,7 +2,7 @@
 title: 'Culture isn’t just vibe. It’s <span class="text-primary">alignment.</span>'
 meta_title: "For HR & Culture Leaders | Career Clarity"
 description: "Move beyond engagement scores and better understand the factors shaping motivation, alignment, and retention at work."
-image: "/images/platform-home-1.png"
+image: "/images/og/hr-and-culture.png"
 draft: false
 template: "audience"
 intro: "Career Clarity helps people teams move beyond broad engagement scores and better understand why people are thriving, drifting, or burning out."

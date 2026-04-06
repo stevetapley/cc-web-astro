@@ -2,7 +2,7 @@
 title: 'The secret <span class="text-primary">weapon</span> for long-term placements.'
 meta_title: "For Recruiters | Career Clarity"
 description: "Look beyond the CV and understand candidate motivators, dealbreakers, and long-term fit before placement."
-image: "/images/platform-home-1.png"
+image: "/images/og/recruiters.png"
 draft: false
 template: "audience"
 intro: "A strong workplace culture isn’t just about where you work — it’s about how it feels to be there. Career Clarity helps you see the fit factors that matter before a placement goes wrong."

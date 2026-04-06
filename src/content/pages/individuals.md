@@ -2,7 +2,7 @@
 title: 'Stop drifting. Start <span class="text-primary">choosing.</span>'
 meta_title: "For Individuals | Career Clarity"
 description: "Understand your career drivers, uncover your non-negotiables, and find your next right move with Career Clarity."
-image: "/images/platform-home-1.png"
+image: "/images/og/individuals.png"
 draft: false
 template: "audience"
 intro: "Most of us adapt to whatever role we’re in. Career Clarity helps you stop adapting and start being deliberate about what you actually need."

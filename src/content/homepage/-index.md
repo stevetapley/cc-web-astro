@@ -1,7 +1,7 @@
 ---
 meta_title: "Career Clarity | Understand what energises you at work"
 description: "Career Clarity helps you understand what energises you at work, uncover what’s quietly draining you, and find your next right move."
-image: "/images/og-image.png"
+image: "/images/og/index.png"
 banner:
   title: 'Stop <span class="text-secondary">guessing</span>'
   rotating_phrases:

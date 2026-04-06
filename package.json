@@ -9,6 +9,7 @@
     "format": "prettier -w .",
     "check": "astro check",
     "preview": "astro preview",
+    "generate-og-files": "tsx scripts/generate-og-files.ts",
     "deploy:cf-workers": "npm run build && wrangler deploy",
     "preview:cf-workers": "npm run build && wrangler dev"
   },
@@ -30,6 +31,8 @@
     "react-icons": "^5.6.0",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
+    "satori": "^0.18.3",
+    "satori-html": "^0.3.2",
     "sharp": "0.34.5",
     "vite": "^7.3.1"
   },
@@ -44,7 +47,9 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.2.1",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "wrangler": "^4.72.0"
+    "wrangler": "^4.72.0",
+    "yaml": "^2.8.1"
   }
 }

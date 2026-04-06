@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 meta_title: "Privacy Policy | Career Clarity"
 description: "How Career Clarity collects, uses, stores, and protects your account, assessment, and service data."
+image: "/images/og/privacy-policy.png"
 draft: false
 ---
 

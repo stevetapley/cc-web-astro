@@ -2,7 +2,7 @@
 title: "Connect with us"
 meta_title: "Contact | Career Clarity"
 description: "Talk to Career Clarity about early access, team use cases, hiring support, or general enquiries."
-image: "/images/og-image.png"
+image: "/images/og/contact.png"
 draft: false
 info:
   title: Get in touch
