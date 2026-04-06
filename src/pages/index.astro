@@ -44,7 +44,7 @@ const {
               <>
                 <br />
                 <span class="hero-rotator-wrap">
-                  <RotatingText phrases={banner.rotating_phrases} client:load />
+                  <RotatingText phrases={banner.rotating_phrases} client:idle />
                 </span>
               </>
             ) : null
@@ -90,7 +90,7 @@ const {
     audience_tabs?.items?.length && (
       <section class="section bg-white/65 py-10 md:py-12 backdrop-blur-[1px]">
         <div class="container">
-          <AudienceTabs items={audience_tabs.items} client:load />
+          <AudienceTabs items={audience_tabs.items} client:idle />
         </div>
       </section>
     )
@@ -136,7 +136,7 @@ const {
             <ImageCarousel
               images={how_it_works.images || (how_it_works.image ? [how_it_works.image] : [])}
               altPrefix="Career Clarity assessment preview"
-              client:load
+              client:idle
             />
           </div>
         </div>
@@ -154,7 +154,7 @@ const {
                 <ImageCarousel
                   images={profile_highlights.images || (profile_highlights.image ? [profile_highlights.image] : [])}
                   altPrefix="Career profile insight"
-                  client:load
+                  client:idle
                 />
               </div>
             )}
