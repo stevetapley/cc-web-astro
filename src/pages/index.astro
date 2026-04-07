@@ -115,9 +115,9 @@ const {
 
             {
               how_it_works.note && (
-                <p class="mt-5 max-w-[620px] font-secondary text-sm italic text-text-dark">
-                  {how_it_works.note}
-                </p>
+                <aside class="feature-note-callout mt-5 max-w-[620px]" aria-label="Key takeaway">
+                  <p>{how_it_works.note}</p>
+                </aside>
               )
             }
 
@@ -136,6 +136,7 @@ const {
             <ImageCarousel
               images={how_it_works.images || (how_it_works.image ? [how_it_works.image] : [])}
               altPrefix="Career Clarity assessment preview"
+              minHeight="clamp(320px, 36vw, 460px)"
               client:idle
             />
           </div>
@@ -154,6 +155,7 @@ const {
                 <ImageCarousel
                   images={profile_highlights.images || (profile_highlights.image ? [profile_highlights.image] : [])}
                   altPrefix="Career profile insight"
+                  minHeight="clamp(280px, 32vw, 380px)"
                   client:idle
                 />
               </div>

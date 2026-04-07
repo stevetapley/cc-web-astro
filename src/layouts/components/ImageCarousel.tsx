@@ -10,9 +10,13 @@ type ImageLike =
 const ImageCarousel = ({
   images,
   altPrefix = "Screenshot",
+  autoRotateMs = 3000,
+  minHeight = "clamp(280px, 34vw, 420px)",
 }: {
   images: ImageLike[];
   altPrefix?: string;
+  autoRotateMs?: number;
+  minHeight?: string;
 }) => {
   const items = useMemo(
     () =>
@@ -26,6 +30,17 @@ const ImageCarousel = ({
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const hasMultiple = items.length > 1;
+
+  useEffect(() => {
+    if (!hasMultiple || lightboxOpen || autoRotateMs <= 0) return;
+
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % items.length);
+    }, autoRotateMs);
+
+    return () => window.clearInterval(intervalId);
+  }, [autoRotateMs, hasMultiple, items.length, lightboxOpen]);
 
   useEffect(() => {
     if (!lightboxOpen) return;
@@ -47,7 +62,6 @@ const ImageCarousel = ({
   if (!items.length) return null;
 
   const activeItem = items[activeIndex];
-  const hasMultiple = items.length > 1;
 
   const showPrevious = () => {
     setActiveIndex((current) => (current - 1 + items.length) % items.length);
@@ -77,8 +91,14 @@ const ImageCarousel = ({
             className="group image-carousel-preview"
             aria-label="Open screenshot fullscreen"
             onClick={() => setLightboxOpen(true)}
+            style={{ minHeight }}
           >
-            <img src={activeItem.src} alt={activeItem.alt} loading="lazy" />
+            <img
+              src={activeItem.src}
+              alt={activeItem.alt}
+              loading="lazy"
+              style={{ minHeight }}
+            />
             <span className="image-carousel-hint">Click to enlarge</span>
           </button>
 
@@ -94,21 +114,6 @@ const ImageCarousel = ({
           )}
         </div>
 
-        {hasMultiple && (
-          <div className="image-carousel-thumbs">
-            {items.map((item, index) => (
-              <button
-                key={`${item.src}-${index}`}
-                type="button"
-                className={`image-carousel-thumb ${index === activeIndex ? "active" : ""}`}
-                aria-label={`Show screenshot ${index + 1}`}
-                onClick={() => setActiveIndex(index)}
-              >
-                <img src={item.src} alt={item.alt} loading="lazy" />
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       {lightboxOpen && (
