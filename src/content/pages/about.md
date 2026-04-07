@@ -36,9 +36,9 @@ After more than a decade working with organisations on how they attract, develop
 The problem wasn't the people. It was that nobody had given them a clear map of what actually drives them.
 
 ### Why I built this
-I kept having the same conversation — with friends, with colleagues, with people in my network who were clearly capable but quietly stuck. They knew something was off. They just didn't have language for it.
+I kept having the same conversation with friends, colleagues, and people in my network who were clearly capable but quietly stuck. They knew something was off. They just didn't have language for it.
 
-After a decade watching organisations invest heavily in understanding their people — and seeing how rarely that clarity flowed back to the individual — I decided to build the tool I kept wishing existed.
+After a decade watching organisations invest heavily in understanding their people - but also seeing how rarely that clarity flowed back to the individual - I decided to build the tool I kept wishing existed.
 
 ### What it is today
 Career Clarity is in early access and free to use while I continue to shape it based on real feedback.
@@ -48,6 +48,6 @@ If you've used it and have feedback, I'd genuinely love to hear from you: [hello
 <div class="not-prose mt-10 rounded-[24px] border border-border bg-light/50 px-6 py-6 md:px-8 md:py-7">
   <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to get clear on what drives you at work?</p>
   <a class="btn btn-primary" href="https://my.careerclarity.app/" target="_blank" rel="noopener noreferrer">
-    Get your career profile — free during early access →
+    Get your career profile - free during early access →
   </a>
 </div>

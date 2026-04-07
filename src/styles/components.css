@@ -227,19 +227,21 @@
 
 /* site background */
 .site-main {
-  background-color: #f7f7f8;
-  background-image:
-    linear-gradient(rgba(247, 247, 248, 0.94), rgba(247, 247, 248, 0.94)),
-    url("/images/background.svg");
+  background-color: #f4f5f7;
+  background-image: url("data:image/svg+xml;utf8,<svg width='80' height='80' xmlns='http://www.w3.org/2000/svg'><circle cx='20' cy='20' r='8' fill='%234b5d67' fill-opacity='0.03'/><line x1='40' y1='40' x2='80' y2='80' stroke='%23d6a77a' stroke-width='4' stroke-opacity='0.03'/></svg>");
+  background-size: 80px 80px;
   background-repeat: repeat;
-  background-position: top center;
-  background-size: auto, 420px;
+}
+
+.site-main > section {
+  background-color: transparent;
+}
+
+.site-main > section:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
 /* homepage */
-.hero-pattern {
-  background: transparent;
-}
 
 .home-surface {
   @apply rounded-[28px] border border-border bg-white p-3 shadow-[0_24px_60px_-34px_rgba(23,20,58,.35)];

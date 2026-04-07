@@ -34,7 +34,7 @@ const {
   description={homepageDescription}
   image={homepageImage}
 >
-  <section class="hero-pattern section pb-12 pt-8 md:pt-14">
+  <section class="section pb-12 pt-8 md:pt-14">
     <div class="container">
       <div class="mx-auto max-w-[920px] text-center">
         <h1 class="mx-auto max-w-[920px] text-[1.9rem] leading-[1.03] sm:text-[2.5rem] md:text-[3.2rem] lg:text-[3.6rem]">
@@ -88,7 +88,7 @@ const {
 
   {
     audience_tabs?.items?.length && (
-      <section class="section bg-white/65 py-10 md:py-12 backdrop-blur-[1px]">
+      <section class="section py-10 md:py-12">
         <div class="container">
           <AudienceTabs items={audience_tabs.items} client:idle />
         </div>
@@ -98,7 +98,7 @@ const {
 
   {
     how_it_works && (
-      <section class="section bg-transparent">
+      <section class="section">
         <div class="container grid items-center gap-10 lg:grid-cols-2">
           <div>
             {how_it_works.eyebrow && <p class="eyebrow">{how_it_works.eyebrow}</p>}
@@ -146,7 +146,7 @@ const {
 
   {
     profile_highlights && (
-      <section class="section bg-white/60 backdrop-blur-[1px]">
+      <section class="section">
         <div class="container grid items-center gap-10 lg:grid-cols-2">
           <div class="order-2 lg:order-1">
             {(profile_highlights.images?.length || profile_highlights.image) && (
@@ -197,7 +197,7 @@ const {
 
   {
     call_to_action && (
-      <section class="section bg-[#EEF2F7]/80 backdrop-blur-[1px]">
+      <section class="section">
         <div class="container">
           <div class="mx-auto max-w-[760px] text-center">
             <h2 class="mx-auto max-w-[700px]" set:html={call_to_action.title} />
@@ -224,7 +224,7 @@ const {
 
   {
     testimonial && (
-      <section class="hero-pattern section pt-10">
+      <section class="section pt-10">
         <div class="container">
           <TestimonialCard testimonial={testimonial} headingTag="h3" />
         </div>
