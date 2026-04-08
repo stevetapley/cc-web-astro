@@ -108,13 +108,13 @@ profile_highlights:
     - /images/analysis-4.png
   items:
     - title: Career Summary
-      content: A clear snapshot of your career fingerprint - the patterns, motivations and themes that shape how you work best.
+      content: A plain-language summary of what makes you tick at work. Something written specifically for you, not a personality type.
     - title: Key Drivers
       content: The 4–6 factors that most strongly influence your motivation at work and explain why some roles energise you while others quietly drain you.
     - title: Strategic Recommendations
-      content: Practical actions you can take now - from small changes in how you structure your work to conversations worth having with your manager.
+      content: Practical actions you can take now; from small changes in how you structure your work to conversations worth having with your manager.
     - title: Critical Focus Areas
-      content: A deeper analysis of the issues you marked as most important, with prompts, practical steps, and better questions to ask.
+      content: For the things you rated as most important, you get a deeper breakdown. Why it matters to you specifically, and what to do if your current role isn't delivering it.
   button:
     enable: true
     label: Get my career profile
@@ -123,7 +123,7 @@ profile_highlights:
 call_to_action:
   title: 'Work shouldn’t <span class="text-secondary">cost</span> this much of you.'
   content: >-
-    Whether you’re job-hunting or just trying to understand why your current role feels off - five minutes is enough to get clearer than most people ever do.
+    Whether you’re job-hunting or just trying to understand why your current role feels off. Five minutes is enough to get clearer than most people ever do.
   button:
     enable: true
     label: Start your reflection - 5 minutes
@@ -132,7 +132,7 @@ call_to_action:
 testimonial:
   title: Testimonials
   quote: >-
-    The career profile analysis is spot on. It’s like it knows me better than me - and it was good to see some actions I can take to my manager.
+    The career profile analysis is spot on. It’s like it knows me better than me, and it was good to see some actions I can take to my manager.
   author: Rom
   role: Engineer
   image: /images/review4.jpg

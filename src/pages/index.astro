@@ -188,9 +188,13 @@ const {
             <div class="mt-6 space-y-4">
               {profile_highlights.items.map((item, index) => (
                 <div class="profile-point">
-                  <div class="profile-point-number">{index + 1}</div>
                   <div>
-                    <p class="font-primary text-lg font-semibold text-text-dark">{item.title}</p>
+                    <p class="font-primary text-lg font-semibold text-text-dark">
+                      <span class="mr-2 text-secondary">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      {item.title}
+                    </p>
                     <p class="mt-1">{item.content}</p>
                   </div>
                 </div>
