@@ -105,19 +105,27 @@ const {
   {
     how_it_works && (
       <section class="section">
-        <div class="container grid items-center gap-10 lg:grid-cols-2">
-          <div>
+        <div class="container">
+          <div class="how-it-works-heading mb-8 md:mb-10">
             {how_it_works.eyebrow && <p class="eyebrow">{how_it_works.eyebrow}</p>}
-            <h2 class="max-w-[560px]" set:html={how_it_works.title} />
+            <h2 class="max-w-[760px]" set:html={how_it_works.title} />
+          </div>
 
-            <div class="step-list mt-6 space-y-4">
-              {how_it_works.steps.map((step) => (
-                <div class="step-list-item">
-                  <p class="font-primary text-lg font-semibold text-text-dark">{step.title}</p>
-                  <p class="mt-1">{step.content}</p>
-                </div>
-              ))}
-            </div>
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <div class="step-list space-y-4">
+                {how_it_works.steps.map((step, index) => (
+                  <div class="step-list-item">
+                    <p class="font-primary text-lg font-semibold text-text-dark">
+                      <span class="mr-2 text-secondary">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      {step.title}
+                    </p>
+                    <p class="mt-1">{step.content}</p>
+                  </div>
+                ))}
+              </div>
 
             {
               how_it_works.note && (
@@ -146,6 +154,7 @@ const {
               client:idle
             />
           </div>
+        </div>
         </div>
       </section>
     )
@@ -207,8 +216,8 @@ const {
     call_to_action && (
       <section class="section">
         <div class="container">
-          <div class="mx-auto max-w-[760px] text-center">
-            <h2 class="mx-auto max-w-[700px]" set:html={call_to_action.title} />
+          <div class="mx-auto max-w-[790px] text-center">
+            <h2 class="mx-auto max-w-[760px]" set:html={call_to_action.title} />
             {
               call_to_action.content && (
                 <p class="mx-auto mt-4 max-w-[620px]">{call_to_action.content}</p>

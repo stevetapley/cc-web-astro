@@ -73,23 +73,24 @@ audience_tabs:
 
 how_it_works:
   eyebrow: How it works
-  title: 'Clarity in three <span class="text-secondary">simple</span> steps'
+  title: 'Clarity in four <span class="text-secondary">simple</span> steps'
   images:
-    - /images/platform-home-1.png
+    - /images/platform-assessment-1.png
     - /images/platform-analysis-1.png
     - /images/platform-analysis-2.png
     - /images/platform-analysis-3.png
-    - /images/platform-assessment-1.png
   steps:
     - title: Reflect
       content: Spend 5 minutes answering intuitive questions that bypass your polite autopilot answers.
     - title: Rank
-      content: Rate each factor on a simple scale - from doesn’t matter to truly essential - across culture, professional fit, personal life and compensation.
+      content: Rate 20 factors across culture, professional fit, personal life and compensation - from "doesn’t matter" to "truly essential". No right answers.
     - title: Reveal
       content: >-
         Get your profile: a personalised map of what drives you, what your current role is
         missing, and five specific next steps.
-  note: Your profile also unlocks an AI Clarity Coach - ask it about your role, your manager, or your next move.
+    - title: Ask
+      content: >-
+        Your profile unlocks the AI Clarity Coach. Ask it why a driver matters, what to do about your manager, or whether a role you're considering is actually a fit.
   button:
     enable: true
     label: See what actually matters to me
