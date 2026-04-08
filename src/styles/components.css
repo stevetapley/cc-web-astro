@@ -271,6 +271,16 @@
   @apply min-h-[280px] rounded-[20px] bg-transparent px-2 py-1 lg:px-6;
 }
 
+.audience-panel-title {
+  @apply max-w-none text-[1.9rem] leading-[1.05] sm:text-[2.25rem] md:text-[2.6rem] lg:text-[2.9rem];
+}
+
+@media (min-width: 1024px) {
+  .audience-panel-title {
+    white-space: nowrap;
+  }
+}
+
 .audience-tab-note {
   @apply rounded-2xl border border-[#F6D2BA] bg-[#FFF7F1] px-4 py-3 font-semibold leading-6 text-[#B45309] shadow-sm;
 }

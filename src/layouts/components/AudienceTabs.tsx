@@ -53,7 +53,7 @@ const AudienceTabs = ({ items }: { items: AudienceTabItem[] }) => {
         className="audience-panel"
       >
         <h2
-          className="max-w-[640px]"
+          className="audience-panel-title"
           dangerouslySetInnerHTML={{ __html: activeItem.title }}
         />
         <p className="mt-4 max-w-[680px] text-base leading-7 text-text md:text-lg">

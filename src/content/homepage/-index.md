@@ -27,12 +27,9 @@ audience_tabs:
     - name: For individuals
       title: 'Stop drifting. Start <span class="text-secondary">choosing.</span>'
       content: >-
-        You know something feels “off”, but you can’t quite put your finger on it. Is it the salary,
-        the commute, or is it that you’re spending your energy pretending to be someone who doesn’t
-        mind Sunday night dread?
+        You've probably already run through the list. The salary, the commute, the manager. And you've probably talked yourself out of most of it -  told yourself it's not that bad, or that switching jobs won't actually change anything.
       emphasis: >-
-        Find out what you actually need - not what you think you should want ... so your next move
-        isn’t just a different desk with the same old problems.
+        Career Clarity helps you cut through that. Find out what you actually need from work, not the version of it you've convinced yourself to settle for.
       button:
         enable: true
         label: Uncover my drivers
@@ -40,39 +37,38 @@ audience_tabs:
     - name: For team leaders
       title: 'Lead the human, not just the <span class="text-secondary">resource.</span>'
       content: >-
-        Generic shout-outs and coffee vouchers don’t stop burnout. To lead effectively, you need to know
-        what actually energises your people - and what’s quietly draining them.
+        Generic 'shout-outs' and coffee vouchers don’t stop burnout. To lead effectively, you need to know
+        what actually energises your people, and what’s quietly draining them.
       emphasis: >-
-        Identify where your team’s roles are clashing with their values so you can build a high-performing,
-        motivated team that feels seen, safe, and more likely to stay.
-      note: We’re still building out this part of the app. Get in touch if you’d like more information.
+        Find out where your team's roles are clashing with what actually drives them, before it shows up in your attrition numbers.
+      note: Team features are coming soon. In the meantime, try it with your own profile. It's the same experience your team would get.
       button:
         enable: true
-        label: See what's quietly draining my team
+        label: Try it yourself first
         link: https://my.careerclarity.app/
     - name: For HR & culture leaders
       title: 'Culture isn’t just vibe. It’s <span class="text-secondary">alignment.</span>'
       content: >-
         Engagement surveys tell you that people are unhappy, but they rarely tell you why.
-        Career Clarity helps you understand the friction before it becomes an exit interview.
+        And by the time you find out, you're already writing a job ad.
+        Career Clarity surfaces the friction at the factor level (culture, autonomy, growth, compensation), before it becomes a pattern you have to manage retrospectively.
       emphasis: >-
-        Match people to environments where they can do their best work - not just their job description.
-      note: We’re still building out this part of the app. Get in touch if you’d like more information.
+        Match people to environments where they can do their best work, not just their job description.
+      note: Team features are coming soon. In the meantime, try it with your own profile. It's the same experience your team would get.
       button:
         enable: true
-        label: Understand what our team needs
+        label: Try it yourself first
         link: https://my.careerclarity.app/
     - name: For recruiters
-      title: 'The secret weapon for <span class="text-secondary">long-term placements.</span>'
+      title: 'The placement that actually <span class="text-secondary">sticks.</span>'
       content: >-
-        The worst feeling is a candidate ghosting after three months because the fit wasn’t right.
-        We help you look past the CV so dealbreakers don’t collide with the role later.
+        A candidate can look perfect on paper and still be gone in three months. Usually because the things that mattered to them (like autonomy, company culture, progression pace) were never surfaced in the process.
       emphasis: >-
-        A structured way to understand what a candidate genuinely needs from a role - before they accept one that doesn’t fit.
-      note: We’re still building out this part of the app. Get in touch if you’d like more information.
+        Give candidates a structured way to understand their own dealbreakers before they accept a role that doesn't fit. Better for them and better for your retention record.
+      note: Team features are coming soon. The best way to understand what candidates experience is to go through it yourself.
       button:
         enable: true
-        label: See what candidates actually need
+        label: Try it as a candidate
         link: https://my.careerclarity.app/
 
 how_it_works:
