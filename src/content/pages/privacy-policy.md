@@ -14,6 +14,8 @@ _Last updated: April 6, 2026_
 >
 > We do not sell your personal data, we do not track you for third-party ads, and you remain in control of your information at all times.
 >
+> Our Clarity Coach is not trained on your data.
+>
 > The details below are for legal compliance, but our philosophy is simple: we treat your data with the same respect we'd want for our own.
 
 ### Privacy summary
@@ -24,11 +26,12 @@ Career Clarity collects minimal personal data to provide and improve the service
 
 - **Account identifiers** such as your email address or OAuth ID so we can authenticate you and tie assessments to your account.
 - **Assessment content** such as answers, ratings, comments, and generated analysis so we can provide your results.
+- **Chat messages** when you use our Clarity Coach so it can provide contextual and helpful answers.
 - **App usage data and diagnostics** such as crash reports, device type, and timestamps so we can maintain and improve the app.
 
 ### How we use data
 
-- Provide core features, including creating and storing assessments and showing your results.
+- Provide core features, including creating and storing assessments, showing your results, and as context for the AI Clarity Coach.
 - Improve the product and personalize recommendations.
 - Run analytics and troubleshoot issues.
 
