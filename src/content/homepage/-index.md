@@ -11,10 +11,11 @@ banner:
     - if you’re in the right job
     - why Sunday nights feel so heavy
   content: >-
-    We spend 90,000 hours of our lives at work - yet most of us are running on autopilot.
-    In just five minutes, Career Clarity reveals what actually energises you at work - and
-    what’s quietly draining you.
-  subtitle: No quizzes. No vague archetypes. Just a clear profile of your real drivers.
+    Most people who feel stuck have already thought about it. And the way most people reflect on their career is too open-ended to cut through the noise.
+    
+    <br/><br/>
+    Career Clarity structures the reflection for you. Answer twenty targeted questions, and we'll give you a profile that shows you exactly what energises you, what's draining you, and where the gap is.
+  subtitle: So your next move actually fixes the problem, not just the most obvious symptom.
   note: Free during early access - no card required.
   button:
     enable: true
