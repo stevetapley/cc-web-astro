@@ -43,7 +43,7 @@ testimonial:
 call_to_action:
   title: 'A career that <span class="text-secondary">gives</span> back more than it takes.'
   content: Stop drifting. Start choosing. 5 minutes to a better Monday morning.
-  note: No credit card required. Private & secure.
+  note: 'No credit card required. [Private & secure.](/privacy-policy)'
   button:
     enable: true
     label: Start your reflection - 5 minutes

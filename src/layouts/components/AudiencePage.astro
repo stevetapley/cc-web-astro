@@ -137,7 +137,12 @@ const {
               />
             )}
 
-            {call_to_action.note && <p class="mt-4 text-sm text-text">{call_to_action.note}</p>}
+            {call_to_action.note && (
+              <div
+                class="mt-4 text-sm text-text [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-secondary"
+                set:html={markdownify(call_to_action.note)}
+              />
+            )}
           </div>
         </section>
       )

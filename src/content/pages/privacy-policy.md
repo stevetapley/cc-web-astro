@@ -10,7 +10,7 @@ _Last updated: April 6, 2026_
 
 > ### Plain English Summary
 >
-> We built Career Clarity to help you with your career, not to harvest your data. We only collect the information necessary to provide your analysis, such as your email to save your progress and your answers to generate results.
+> We built Career Clarity to help you with your career, not to harvest your data.
 >
 > We do not sell your personal data, we do not track you for third-party ads, and you remain in control of your information at all times.
 >
@@ -37,15 +37,17 @@ Career Clarity collects minimal personal data to provide and improve the service
 
 ### Sharing and third parties
 
+All data is stored in US-based cloud providers.
+
 We do not sell your personal data. We may share data with trusted third-party service providers for hosting, analytics, and AI processing, but only when they act on our behalf under contract.
 
-Where we use third-party providers to help run analysis features, only the minimum necessary data is shared, and those processors are contractually limited from using your data for other purposes.
+Where we use third-party AI providers to help run analysis features, only the minimum necessary data is shared, and those processors are contractually limited from using your data for other purposes. Your data is not used to train the AI.
 
-If you sign in with a social provider such as Google or Facebook, limited profile information from that provider is used for authentication and account creation. You can review and revoke provider permissions through the provider's account settings.
+If you sign in with a social provider such as Google or Facebook, limited profile information (name, email) from that provider is used for authentication and account creation. You can review and revoke provider permissions through the provider's account settings.
 
 ### Retention
 
-We keep assessment data until you delete it or your account. You can request deletion of your account and associated data using the contact details below.
+We keep assessment, analysis and chat data until you delete it or your account. You can request updates or deletion of your account and associated data using the contact details below.
 
 ### Security
 
@@ -55,7 +57,6 @@ We use industry-standard safeguards, including encryption in transit and access 
 
 - **Delete assessments:** You can delete individual assessments inside the app.
 - **Delete account:** Contact us to request full account and data deletion.
-- **Opt out of analytics:** You can disable analytics in app settings, if available, or contact support.
 
 ### Children
 
@@ -67,4 +68,4 @@ For privacy questions or data deletion requests, contact [privacy@careerclarity.
 
 ### Updates
 
-We may update this policy from time to time. For substantial changes, we will provide notice in the app or by email when appropriate.
+We may update this policy from time to time. For substantial changes, we will provide 30 days notice in the app or by email for substantial changes.
