@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const RotatingText = ({
   phrases,
-  interval = 1800,
+  interval = 3500,
 }: {
   phrases: string[];
   interval?: number;
@@ -22,9 +22,16 @@ const RotatingText = ({
   if (!phrases?.length) return null;
 
   return (
-    <span className="rotating-text" key={phrases[activeIndex]}>
-      {phrases[activeIndex]}
-    </span>
+    <>
+      {phrases.map((phrase, i) => (
+        <span
+          key={phrase}
+          className={`rotating-text${i === activeIndex ? " rotating-text--active" : ""}`}
+        >
+          {phrase}
+        </span>
+      ))}
+    </>
   );
 };
 

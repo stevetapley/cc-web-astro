@@ -311,11 +311,25 @@
 
 .hero-rotator-wrap {
   @apply mt-2 block min-h-[2.2em] text-[0.94em] leading-[1.02] text-text-dark sm:min-h-[1.2em] sm:text-[0.92em];
+  position: relative;
 }
 
 .rotating-text {
-  @apply inline-block text-balance;
-  animation: heroPhraseFade 1.8s ease-out both;
+  @apply block text-balance;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.rotating-text--active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-text {
+    transition: none;
+  }
 }
 
 .image-carousel {
@@ -394,18 +408,7 @@
   @apply right-2 md:right-4;
 }
 
-@keyframes heroPhraseFade {
-  0% {
-    opacity: 0;
-  }
-  20%,
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 
 /* audience pages */
 .audience-page-heading {
