@@ -326,6 +326,14 @@
   opacity: 1;
 }
 
+.hero-title-subline {
+  @apply mx-auto mt-3 max-w-[760px] text-balance text-xl font-bold leading-snug text-black sm:text-2xl;
+}
+
+.hero-content-footer {
+  @apply mx-auto mt-5 max-w-[720px] text-left font-secondary text-base font-semibold text-text-dark;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .rotating-text {
     transition: none;

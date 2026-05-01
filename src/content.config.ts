@@ -12,10 +12,12 @@ const homepageCollection = defineCollection({
     banner: z
       .object({
         title: z.string().optional(),
+        title_subline: z.string().optional(),
         content: z.string().optional(),
+        content_footer: z.string().optional(),
         subtitle: z.string().optional(),
         note: z.string().optional(),
-        rotating_phrases: z.array(z.string()).optional(),
+        rotating_phrases: z.array(z.string()).optional().nullable(),
         image: z.string().optional(),
         button: z
           .object({

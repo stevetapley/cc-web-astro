@@ -3,19 +3,13 @@ meta_title: "Career Clarity | Understand what energises you at work"
 description: "Career Clarity helps you understand what energises you at work, uncover what’s quietly draining you, and find your next right move."
 image: "/images/og/index.png"
 banner:
-  title: 'Stop <span class="text-secondary">guessing</span>'
+  title: 'Every role is a <span class="text-secondary">trade-off</span>'
+  title_subline: "Most people don't know what they'd sacrifice until they have to."
   rotating_phrases:
-    - what's draining your energy
-    - what your next move might be
-    - what your real dealbreakers are
-    - if you’re in the right job
-    - why Sunday nights feel so heavy
   content: >-
-    Most people who feel stuck have already thought about it. And the way most people reflect on their career is too open-ended to cut through the noise.
-    
-    <br/><br/>
-    Career Clarity structures the reflection for you. Answer twenty targeted questions, and we'll give you a profile that shows you exactly what energises you, what's draining you, and where the gap is.
-  subtitle: So your next move actually fixes the problem, not just the most obvious symptom.
+    Most people know what they want from a role. Fewer have though about what they'd give up to get it.    
+    Career Clarity helps you work that out - before something else forces you to.
+  content_footer: So when a trade-off is staring you down, you already know where you stand.
   note: Free during early access - no card required.
   button:
     enable: true
@@ -26,21 +20,21 @@ audience_tabs:
   items:
     - name: For individuals
       title: 'Stop drifting. Start <span class="text-secondary">choosing.</span>'
-      content: >-
-        You've probably already run through the list. The salary, the commute, the manager. And you've probably talked yourself out of most of it -  told yourself it's not that bad, or that switching jobs won't actually change anything.
+      content: |-
+        You've probably already run through the list. The salary, the commute, the manager. And those are the loudest factors, but not necessarily the ones that actually drive you.
+        Career Clarity shows you your real hierarchy: what you'd protect, what you'd trade, and what you've been compromising on without realising it.
       emphasis: >-
-        Career Clarity helps you cut through that. Find out what you actually need from work, not the version of it you've convinced yourself to settle for.
+        Find out what you'd actually sacrifice, and what that means for the role you're in right now
       button:
         enable: true
-        label: Uncover my drivers
+        label: Know my trade-offs
         link: https://my.careerclarity.app/
     - name: For team leaders
       title: 'Lead the human, not just the <span class="text-secondary">resource.</span>'
       content: >-
-        Generic 'shout-outs' and coffee vouchers don’t stop burnout. To lead effectively, you need to know
-        what actually energises your people, and what’s quietly draining them.
+        Generic 'shout-outs' and coffee vouchers don’t stop attrition. To lead effectively, you need to know what your people would actually sacrifice to stay, and what they're quietly compromising on right now.
       emphasis: >-
-        Find out where your team's roles are clashing with what actually drives them, before it shows up in your attrition numbers.
+        Find out where your team's roles are failing their non-negotiables before it shows up in your attrition numbers.
       note: Team features are coming soon. In the meantime, try it with your own profile. It's the same experience your team would get.
       button:
         enable: true
@@ -51,9 +45,9 @@ audience_tabs:
       content: >-
         Engagement surveys tell you that people are unhappy, but they rarely tell you why.
         And by the time you find out, you're already writing a job ad.
-        Career Clarity surfaces the friction at the factor level (culture, autonomy, growth, compensation), before it becomes a pattern you have to manage retrospectively.
+        Career Clarity surfaces the mismatch at the factor level (culture, autonomy, growth, compensation), before it becomes a pattern you have to manage retrospectively.
       emphasis: >-
-        Match people to environments where they can do their best work, not just their job description.
+        Understand what your people would trade, and whether their current environment is asking them to trade too much.
       note: Team features are coming soon. In the meantime, try it with your own profile. It's the same experience your team would get.
       button:
         enable: true
@@ -62,9 +56,9 @@ audience_tabs:
     - name: For recruiters
       title: 'The placement that actually <span class="text-secondary">sticks.</span>'
       content: >-
-        A candidate can look perfect on paper and still be gone in three months. Usually because the things that mattered to them (like autonomy, company culture, progression pace) were never surfaced in the process.
+        A candidate can look perfect on paper and still be gone in three months. Usually because their non-negotiables were never surfaced,and the role was asking them to trade something they didn't know they wouldn't.
       emphasis: >-
-        Give candidates a structured way to understand their own dealbreakers before they accept a role that doesn't fit. Better for them and better for your retention record.
+        Give candidates a structured way to know their trade-offs before they accept. Better for them, and better for your retention record.
       note: Team features are coming soon. The best way to understand what candidates experience is to go through it yourself.
       button:
         enable: true
@@ -72,8 +66,7 @@ audience_tabs:
         link: https://my.careerclarity.app/
 
 how_it_works:
-  eyebrow: How it works
-  title: 'Clarity in four <span class="text-secondary">simple</span> steps'
+  title: 'How it works'
   images:
     - /images/platform-assessment-1.png
     - /images/platform-analysis-1.png
@@ -81,13 +74,12 @@ how_it_works:
     - /images/platform-analysis-3.png
   steps:
     - title: Reflect
-      content: Spend 5 minutes answering intuitive questions that bypass your polite autopilot answers.
+      content: Spend 5 minutes rating20 factors across culture, professional fit, personal life and compensation.
     - title: Rank
-      content: Rate 20 factors across culture, professional fit, personal life and compensation - from "doesn’t matter" to "truly essential". No right answers.
+      content: Allocate your non-negotiables. You have limited credits, and not everything can come first. That's the point.
     - title: Reveal
       content: >-
-        Get your profile: a personalised map of what drives you, what your current role is
-        missing, and five specific next steps.
+        Get your trade-off profile: a clear picture of your hierarchy outlining what you'd protect, what you'd sacrifice, and where your current role is paying you back.
     - title: Ask
       content: >-
         Your profile unlocks the AI Clarity Coach. Ask it why a driver matters, what to do about your manager, or whether a role you're considering is actually a fit.
@@ -97,7 +89,7 @@ how_it_works:
     link: https://my.careerclarity.app/
 
 profile_highlights:
-  title: 'Four things <span class="text-secondary">your profile</span> tells you'
+  title: 'What you get'
   description: >-
     In just 20 carefully designed questions, Career Clarity builds a profile that’s specific to how you
     actually function - not just a personality archetype.
@@ -107,14 +99,14 @@ profile_highlights:
     - /images/analysis-3.png
     - /images/analysis-4.png
   items:
-    - title: Career Summary
-      content: A plain-language summary of what makes you tick at work. Something written specifically for you, not a personality type.
+    - title: Trade-off Profile
+      content: A plain-language summary of your hierarchy, and what matters most, what you'd compromise on, and what you've been trading away without naming it.
     - title: Key Drivers
-      content: The 4–6 factors that most strongly influence your motivation at work and explain why some roles energise you while others quietly drain you.
+      content: The factors you'd refuse to compromise on, and importantly, the tensions between them that most roles can't fully resolve.
     - title: Strategic Recommendations
       content: Practical actions you can take now; from small changes in how you structure your work to conversations worth having with your manager.
-    - title: Critical Focus Areas
-      content: For the things you rated as most important, you get a deeper breakdown. Why it matters to you specifically, and what to do if your current role isn't delivering it.
+    - title: Deep Dives
+      content: For your non-negotiables, you get a full breakdown of the upside when it's right, the cost when it isn't, and the specific questions worth raising with your manager.
   button:
     enable: true
     label: Get my career profile
@@ -123,10 +115,10 @@ profile_highlights:
 call_to_action:
   title: 'Work shouldn’t <span class="text-secondary">cost</span> this much of you.'
   content: >-
-    Whether you’re job-hunting or just trying to understand why your current role feels off. Five minutes is enough to get clearer than most people ever do.
+    Whether you’re weighing a new offer or taking stock of where you are right now, five minutes is enough to know what you'd actually trade.
   button:
     enable: true
-    label: Start your reflection - 5 minutes
+    label: Build your picture - 5 minutes
     link: https://my.careerclarity.app/
 
 testimonial:

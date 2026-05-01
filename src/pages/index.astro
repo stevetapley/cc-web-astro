@@ -52,6 +52,12 @@ const {
         </h1>
 
         {
+          banner?.title_subline && (
+            <p class="hero-title-subline">{banner.title_subline}</p>
+          )
+        }
+
+        {
           banner?.content && (
             <div
               class="mx-auto mt-6 max-w-[720px] text-left text-base leading-8 md:text-lg"
@@ -61,10 +67,10 @@ const {
         }
 
         {
-          banner?.subtitle && (
+          (banner?.content_footer || banner?.subtitle) && (
             <p
-              class="mx-auto mt-5 max-w-[720px] text-left font-secondary text-base font-semibold text-text-dark"
-              set:html={markdownify(banner.subtitle)}
+              class="hero-content-footer"
+              set:html={markdownify(banner?.content_footer || banner?.subtitle || "")}
             />
           )
         }
