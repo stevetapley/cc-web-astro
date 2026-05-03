@@ -20,7 +20,7 @@ I'm Steve - a product leader and software engineer based in Perth, Western Austr
 
 I've spent 30 years building software, and the last decade working at the intersection of technology and people strategy in the SME space. That time gave me a front-row seat to how organisations think about their people - and how rarely individuals get the same clarity about themselves.
 
-I'm a builder at heart. Career Clarity started as a tool I wished existed.
+I'm a builder at heart. Career Clarity started as a tool I wished existed - but nobody seemed to have built.
 
 <div class="not-prose my-5">
   <a class="btn btn-primary" href="https://www.linkedin.com/in/steve-tapley1/" target="_blank" rel="noopener noreferrer">
@@ -31,12 +31,12 @@ I'm a builder at heart. Career Clarity started as a tool I wished existed.
 ### The problem I kept seeing
 Most career tools ask you what you _want_. They give you a personality label, a colour, an archetype - and leave you to figure out what to do with it.
 
-After more than a decade working with organisations on how they attract, develop and retain their people, I kept seeing the same thing: smart, capable professionals stuck in roles that quietly drained them - unable to name exactly why, and unsure what to do next.
+After more than a decade working with organisations on how they attract, develop and retain their people, I kept seeing the same thing: smart, capable professionals who knew something was off, but couldn't name it precisely enough to do much about it.
 
-The problem wasn't the people. It was that nobody had given them a clear map of what actually drives them.
+The problem wasn't the people. It was that nobody had given them any tools to work out what they'd actually sacrifice.
 
 ### Why I built this
-I kept having the same conversation with friends, colleagues, and people in my network who were clearly capable but quietly stuck. They knew something was off. They just didn't have language for it.
+I kept having the same conversation with friends, colleagues, and people in my network who were clearly capable but quietly stuck. They made sensible decisions (good pay, great teams, professional growth), but it never quite added up. They hadn't actually chosen their trade-offs - it was just unconscious decision making.
 
 After a decade watching organisations invest heavily in understanding their people - but also seeing how rarely that clarity flowed back to the individual - I decided to build the tool I kept wishing existed.
 
@@ -45,9 +45,12 @@ Career Clarity is in early access and free to use while I continue to shape it b
 
 If you've used it and have feedback, I'd genuinely love to hear from you: [hello@careerclarity.app](mailto:hello@careerclarity.app)
 
+### What this isn't
+Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you.  It's just designed to show you your particular, and unique, hierarchy. What you do with it after that, is up to you.
+
 <div class="not-prose mt-10 rounded-[24px] border border-border bg-light/50 px-6 py-6 md:px-8 md:py-7">
-  <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to get clear on what drives you at work?</p>
+  <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to know what you'd actually trade?</p>
   <a class="btn btn-primary" href="https://my.careerclarity.app/" target="_blank" rel="noopener noreferrer">
-    Get your career profile - free during early access →
+    Build your picture - free during early access →
   </a>
 </div>

@@ -74,7 +74,7 @@ how_it_works:
     - /images/platform-analysis-3.png
   steps:
     - title: Reflect
-      content: Spend 5 minutes rating20 factors across culture, professional fit, personal life and compensation.
+      content: Spend 5 minutes rating 20 factors across culture, professional fit, personal life and compensation.
     - title: Rank
       content: Allocate your non-negotiables. You have limited credits, and not everything can come first. That's the point.
     - title: Reveal
