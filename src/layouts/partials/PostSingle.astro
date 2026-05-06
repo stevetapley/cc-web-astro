@@ -5,7 +5,7 @@ import { render } from "astro:content";
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const { title, image } = post.data;
+const { title, image, categories } = post.data;
 ---
 
 <section class="section">
@@ -22,6 +22,17 @@ const { title, image } = post.data;
                 alt={title}
                 class="rounded-lg"
               />
+            )
+          }
+          {
+            categories?.length > 0 && (
+              <div class="mt-6 flex flex-wrap gap-2 text-left">
+                {categories.map((category: string) => (
+                  <span class="rounded-full bg-light px-3 py-1 text-xs font-semibold uppercase tracking-wide text-text">
+                    {category}
+                  </span>
+                ))}
+              </div>
             )
           }
           <h1 set:html={markdownify(title)} class="h2 text-left my-6" />

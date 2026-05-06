@@ -33,9 +33,17 @@ const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
 const indexOfLastPost = currentPage * config.settings.pagination;
 const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
 const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
+const pageMetaTitle = postIndex?.data?.meta_title
+  ? `${postIndex.data.meta_title} - Page ${currentPage}`
+  : `${postIndex?.data?.title} - Page ${currentPage}`;
 ---
 
-<Base title={postIndex?.data.title} noindex={true}>
+<Base
+  title={postIndex?.data.title}
+  meta_title={pageMetaTitle}
+  description={postIndex?.data.description}
+  image={postIndex?.data.image}
+>
   <section class="section">
     <div class="container">
       <h1

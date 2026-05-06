@@ -57,7 +57,7 @@ export default defineConfig({
     react(),
     sitemap({
       filter: (page) =>
-        !["/faq", "/pricing", "/blog"].some(
+        !["/faq", "/pricing"].some(
           (route) => page.endsWith(route) || page.includes(`${route}/`),
         ),
     }),

@@ -6,6 +6,7 @@ This public website may be indexed and summarized by search engines and AI assis
 
 Preferred URLs:
 - https://careerclarity.app/
+- https://careerclarity.app/blog
 - https://careerclarity.app/individuals
 - https://careerclarity.app/team-leaders
 - https://careerclarity.app/hr-and-culture

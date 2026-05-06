@@ -19,6 +19,17 @@ const { summary_length } = config.settings;
       />
     )
   }
+  {
+    post.data.categories?.length > 0 && (
+      <div class="mt-4 flex flex-wrap gap-2">
+        {post.data.categories.map((category: string) => (
+          <span class="rounded-full bg-light px-3 py-1 text-xs font-semibold uppercase tracking-wide text-text">
+            {category}
+          </span>
+        ))}
+      </div>
+    )
+  }
   <h2 class="h3 mb-2 mt-4">
     <a href={`/blog/${post.id}`} class="block hover:text-primary">
       {post.data.title}

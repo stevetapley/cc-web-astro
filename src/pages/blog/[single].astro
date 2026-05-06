@@ -1,4 +1,5 @@
 ---
+import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import PostSingle from "@/partials/PostSingle.astro";
@@ -16,7 +17,35 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, meta_title, description, image } = post.data;
+const { title, meta_title, description, image, date, categories, tags } = post.data;
+const publishedTime = date ? new Date(date).toISOString() : undefined;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const canonicalUrl = `${siteUrl}/blog/${post.id}`;
+const imageUrl = image ? `${siteUrl}${image}` : `${siteUrl}${config.metadata.meta_image}`;
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description: description || config.metadata.meta_description,
+  datePublished: publishedTime,
+  dateModified: publishedTime,
+  mainEntityOfPage: canonicalUrl,
+  image: [imageUrl],
+  author: {
+    "@type": "Organization",
+    name: config.metadata.meta_author,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: config.site.title,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}${config.site.logo}`,
+    },
+  },
+  keywords: (tags || []).join(", "),
+};
 ---
 
 <Base
@@ -24,7 +53,12 @@ const { title, meta_title, description, image } = post.data;
   meta_title={meta_title}
   description={description}
   image={image}
-  noindex={true}
+  canonical={canonicalUrl}
+  og_type="article"
+  article_published_time={publishedTime}
+  article_section={categories?.[0]}
+  article_tags={tags || []}
+  structured_data={articleJsonLd}
 >
   <PostSingle post={post} />
 </Base>

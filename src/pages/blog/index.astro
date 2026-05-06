@@ -25,7 +25,12 @@ const featuredPost = currentPosts[0];
 const hasPosts = currentPosts.length > 0;
 ---
 
-<Base title={postIndex?.data.title} noindex={true}>
+<Base
+  title={postIndex?.data.title}
+  meta_title={postIndex?.data.meta_title}
+  description={postIndex?.data.description}
+  image={postIndex?.data.image}
+>
   <section class="section">
     <div class="container">
       <h1
@@ -51,6 +56,17 @@ const hasPosts = currentPosts.length > 0;
                   }
                 </div>
                 <div class="md:col-6">
+                  {
+                    featuredPost.data.categories?.length > 0 && (
+                      <div class="flex flex-wrap gap-2">
+                        {featuredPost.data.categories.map((category: string) => (
+                          <span class="rounded-full bg-light px-3 py-1 text-xs font-semibold uppercase tracking-wide text-text">
+                            {category}
+                          </span>
+                        ))}
+                      </div>
+                    )
+                  }
                   <h2 class="h3 mb-2 mt-4">
                     <a
                       href={`/blog/${featuredPost.id}`}
