@@ -16,6 +16,7 @@ draft: false
 </div>
 
 ### Who I am
+
 I'm Steve, a builder with 30 years of software experience. I've spent the last decade working at the intersection of technology and people strategy in the SME space. That time gave me a front-row seat to how organisations think about their people - and how rarely individuals get the same clarity about themselves.
 
 Career Clarity started as a tool I wished existed - but nobody seemed to have built.
@@ -27,6 +28,7 @@ Career Clarity started as a tool I wished existed - but nobody seemed to have bu
 </div>
 
 ### The problem I kept seeing
+
 Most career tools ask you what you _want_. They give you a personality label, a colour, an archetype - and leave you to figure out what to do with it.
 
 After more than a decade working with organisations on how they attract, develop and retain their people, I kept seeing the same thing: smart, capable professionals who knew something was off, but couldn't name it precisely enough to do much about it.
@@ -34,12 +36,14 @@ After more than a decade working with organisations on how they attract, develop
 The problem wasn't the people. It was that nobody had given them any tools to work out what they'd actually sacrifice.
 
 ### Why I built this
+
 I kept having the same conversation with friends, colleagues, and people in my network who were clearly capable but quietly stuck. They made sensible decisions (good pay, great teams, professional growth), but it never quite added up. They hadn't actually chosen their trade-offs - it was just unconscious decision making.
 
-When I ran it myself, I found out I was a 'Principled Professional'. For me, that meant someone who protects accountability and psychological safety about most other things (including salary). In some ways, I knew that, but having it written down was powerful for me. Coaching conversations do get close, but it had never been this clear.
+When I ran it myself, I found out I was a 'Principled Professional'. For me, that meant someone who protects accountability and psychological safety above most other things (including salary). In some ways, I knew that, but having it written down was powerful for me. Coaching conversations do get close, but it had never been this clear.
 
 ### What this isn't
-Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you. It's just designed to show you your particular, and unique, hierarchy. What you do with it after that, is up to you.
+
+Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you. It's just designed to show you your particular hierarchy. What you do with it after that, is up to you.
 
 <div class="not-prose mt-10 rounded-[24px] border border-border bg-light/50 px-6 py-6 md:px-8 md:py-7">
   <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to know what you'd actually trade?</p>
@@ -47,7 +51,8 @@ Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it gi
     Build your picture - free during early access →
   </a>
 
-<p>
-<br/>
-  If you've used it and have feedback, I'd genuinely love to hear from you: [hello@careerclarity.app](mailto:hello@careerclarity.app)</p>
+<p><br/>
+  If you've used it and have feedback, I'd genuinely love to hear from you:
+  <a class="text-primary hover:underline" href="mailto:hello@careerclarity.app">hello@careerclarity.app</a>
+</p>
 </div>

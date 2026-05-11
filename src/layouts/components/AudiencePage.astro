@@ -34,7 +34,7 @@ const heroImageContainerStyle =
   <div class="container">
     <div class="audience-page-heading">
       <h1 class="h1" set:html={markdownify(title)} />
-      {intro && <p class="mt-4" set:html={markdownify(intro)} />}
+      {intro && <p class="audience-markdown-links mt-4" set:html={markdownify(intro)} />}
     </div>
 
     {
@@ -44,7 +44,7 @@ const heroImageContainerStyle =
             <div class="audience-feature-copy">
               <h2 class="max-w-[460px]" set:html={markdownify(hero.title)} />
               <div
-                class="mt-4 max-w-[460px] space-y-3"
+                class="audience-markdown-links mt-4 max-w-[460px] space-y-3"
                 set:html={markdownify(hero.content, true)}
               />
 
@@ -95,7 +95,7 @@ const heroImageContainerStyle =
               <h2 class="max-w-[640px]" set:html={markdownify(detail_section.title)} />
               {detail_section.content && (
                 <div
-                  class="mt-4 max-w-[700px]"
+                  class="audience-markdown-links mt-4 max-w-[700px]"
                   set:html={markdownify(detail_section.content, true)}
                 />
               )}
@@ -140,7 +140,7 @@ const heroImageContainerStyle =
           <div class="audience-page-heading">
             <h2 class="mx-auto max-w-[780px]" set:html={markdownify(call_to_action.title)} />
             {call_to_action.content && (
-              <p class="mt-4" set:html={markdownify(call_to_action.content)} />
+              <p class="audience-markdown-links mt-4" set:html={markdownify(call_to_action.content)} />
             )}
 
             {call_to_action.button?.enable !== false && call_to_action.button?.label && (
@@ -153,7 +153,7 @@ const heroImageContainerStyle =
 
             {call_to_action.note && (
               <div
-                class="mt-4 text-sm text-text [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-secondary"
+                class="audience-markdown-links mt-4 text-sm text-text"
                 set:html={markdownify(call_to_action.note)}
               />
             )}
