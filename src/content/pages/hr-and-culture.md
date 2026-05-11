@@ -5,14 +5,14 @@ description: "Move beyond engagement scores and better understand the factors sh
 image: "/images/og/hr-and-culture.png"
 draft: false
 template: "audience"
-intro: "Career Clarity helps people teams move beyond broad engagement scores and better understand why people are thriving, drifting, or burning out."
+intro: "Career Clarity helps teams move beyond broad engagement scores and better understand why people are thriving, drifting, or burning out."
 hero:
   title: "We're working on this..."
   content: >-
     We’re still building out this part of the site. Get in touch with us at
     [hello@careerclarity.app](mailto:hello@careerclarity.app) if you would like more information,
     early access, or want to hear when a waitlist opens.
-  image: /images/contact-pencil.png
+  image: /images/platform-analysis-1.png
   button:
     enable: true
     label: Explore the profile

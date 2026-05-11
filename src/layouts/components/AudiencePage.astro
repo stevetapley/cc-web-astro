@@ -14,6 +14,20 @@ const {
   testimonial,
   call_to_action,
 } = page.data;
+
+const heroImageMode = hero?.image_mode ?? "cover";
+const heroImageContainerClass =
+  heroImageMode === "clip"
+    ? "audience-feature-image audience-feature-image-clip"
+    : "audience-feature-image";
+const heroImageClass =
+  heroImageMode === "clip"
+    ? "h-auto w-auto max-w-none"
+    : "h-full w-full object-cover object-left";
+const heroImageContainerStyle =
+  heroImageMode === "clip"
+    ? `max-width: ${hero?.image_max_width ?? "460px"}; height: ${hero?.image_max_height ?? "260px"};`
+    : undefined;
 ---
 
 <section class="section pt-10 md:pt-14">
@@ -44,13 +58,13 @@ const {
             </div>
 
             {hero.image && (
-              <div class="audience-feature-image">
+              <div class={heroImageContainerClass} style={heroImageContainerStyle}>
                 <Image
                   src={hero.image}
                   width={1200}
                   height={900}
                   alt={plainify(hero.title)}
-                  class="h-full w-full object-cover"
+                  class={heroImageClass}
                 />
               </div>
             )}

@@ -7,9 +7,9 @@ draft: false
 template: "audience"
 intro: "Most people haven't consciously decided what they'd sacrifice in a role until one forces them to. Career Clarity helps you work that out first."
 hero:
-  title: "You don't know your hierarchy until a trade-off <span class=\"text-secondary\">forces.</span> it."
+  title: "You don't know your hierarchy until a trade-off <span class=\"text-secondary\">forces</span> it."
   content: >-
-    You can know what you want from a role and still not know what you'd give up to get it. Most people find out the hard way and accepting something that looks right on paper, then quietly compromising on the things that actually drive them.
+    You can know what you want from a role and still not know what you'd give up to get it. Most people find out the hard way and accepting something that looks right on paper, then quietly compromising on the things that actually drive you.
     
     
     Career Clarity makes that hierarchy explicit before a decision makes it for you.
@@ -26,14 +26,14 @@ detail_section:
   bullets:
     - "**Your non-negotiables:** The factors you'd protect in any role and the ones where compromise has a real cost."
     - "**Your blind spots:** The things you've deprioritised without realising, and what that's costing you in combination with what you do need."
-    - "**The gap:** Where your current role is paying you back, and where it's quietly asking for more than it gives."
+    - "**The gap:** Where your current role is actually working for you, and where it's quietly asking for more than it gives."
 feature_cards:
   - title: Your Non-Negotiables
     content: Identify the factors you'd refuse to compromise on, and the ones you'd trade away when a role can't give you everything.
   - title: Your Trade-off Profile
     content: See your full hierarchy across culture, professional fit, personal life, and compensation - mapped clearly so you know exactly where you stand.
   - title: Your Next Move
-    content: A plain-language summary of your profile, the tensions within it, and specific questions worth raising with your manager or asking about a role you're considering.
+    content: A clear summary of your profile, the tensions within it, and specific questions worth raising with your manager or asking about a role you're considering.
 testimonial:
   title: Testimonials
   quote: The career profile analysis is spot on. It’s like it knows me better than me - and it was good to see some actions I can take to my manager.

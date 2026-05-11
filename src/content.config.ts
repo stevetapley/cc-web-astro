@@ -259,6 +259,9 @@ const pagesCollection = defineCollection({
         title: z.string(),
         content: z.string(),
         image: z.string().optional(),
+        image_mode: z.enum(["cover", "clip"]).default("cover").optional(),
+        image_max_width: z.string().optional(),
+        image_max_height: z.string().optional(),
         button: z
           .object({
             label: z.string(),

@@ -1,13 +1,13 @@
 ---
 meta_title: "Career Clarity | Understand what energises you at work"
-description: "Career Clarity helps you understand what energises you at work, uncover what’s quietly draining you, and find your next right move."
+description: "Career Clarity helps you understand what energises you at work, understand what's costing you, and find your next right move."
 image: "/images/og/index.png"
 banner:
   title: 'Every role is a <span class="text-secondary">trade-off</span>'
   title_subline: "Most people don't know what they'd sacrifice until they have to."
   rotating_phrases:
   content: >-
-    Most people know what they want from a role. Fewer have though about what they'd give up to get it.    
+    Most people know what they want from a role. Fewer have thought about what they'd give up to get it.    
     Career Clarity helps you work that out - before something else forces you to.
   content_footer: So when a trade-off is staring you down, you already know where you stand.
   note: Free during early access - no card required.
@@ -56,7 +56,7 @@ audience_tabs:
     - name: For recruiters
       title: 'The placement that actually <span class="text-secondary">sticks.</span>'
       content: >-
-        A candidate can look perfect on paper and still be gone in three months. Usually because their non-negotiables were never surfaced,and the role was asking them to trade something they didn't know they wouldn't.
+        A candidate can look perfect on paper and still be gone in three months. Usually because their non-negotiables were never surfaced, and the role was asking them to trade something they didn't know they valued.
       emphasis: >-
         Give candidates a structured way to know their trade-offs before they accept. Better for them, and better for your retention record.
       note: Team features are coming soon. The best way to understand what candidates experience is to go through it yourself.
@@ -79,10 +79,10 @@ how_it_works:
       content: Allocate your non-negotiables. You have limited credits, and not everything can come first. That's the point.
     - title: Reveal
       content: >-
-        Get your trade-off profile: a clear picture of your hierarchy outlining what you'd protect, what you'd sacrifice, and where your current role is paying you back.
+        Get your trade-off profile: a clear picture of your hierarchy outlining what you'd protect, what you'd sacrifice, and where your current role is actually working for you.
     - title: Ask
       content: >-
-        Your profile unlocks the AI Clarity Coach. Ask it why a driver matters, what to do about your manager, or whether a role you're considering is actually a fit.
+        Your profile unlocks the Clarity Coach. Ask it why a driver matters, what to do about your manager, or whether a role you're considering is actually a fit.
   button:
     enable: true
     label: See what actually matters to me
@@ -91,7 +91,7 @@ how_it_works:
 profile_highlights:
   title: 'What you get'
   description: >-
-    In just 20 carefully designed questions, Career Clarity builds a profile that’s specific to how you
+    In 20 questions, Career Clarity builds a profile that’s specific to how you
     actually function - not just a personality archetype.
   images:
     - /images/analysis-1.png
@@ -100,7 +100,7 @@ profile_highlights:
     - /images/analysis-4.png
   items:
     - title: Trade-off Profile
-      content: A plain-language summary of your hierarchy, and what matters most, what you'd compromise on, and what you've been trading away without naming it.
+      content: A clear summary of your priorities, and what matters most, what you'd compromise on, and what you've been trading away without naming it.
     - title: Key Drivers
       content: The factors you'd refuse to compromise on, and importantly, the tensions between them that most roles can't fully resolve.
     - title: Strategic Recommendations

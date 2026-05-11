@@ -460,6 +460,10 @@
   @apply aspect-[1.08/1] min-h-[260px] w-full object-cover;
 }
 
+.audience-feature-image-clip img {
+  @apply h-auto w-auto max-w-none min-h-0 aspect-auto object-none object-left-top;
+}
+
 .audience-detail-grid {
   @apply grid items-center gap-6 md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[250px_minmax(0,1fr)];
 }
