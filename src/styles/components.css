@@ -241,6 +241,15 @@
   background-color: rgba(255, 255, 255, 0.35);
 }
 
+/* blog images */
+.blog-index-image {
+  @apply block h-auto w-full max-w-[450px] max-h-[250px] rounded-lg;
+}
+
+.blog-post-image {
+  @apply block h-auto w-full max-w-[450px] max-h-[250px] rounded-lg;
+}
+
 /* homepage */
 
 .home-surface {

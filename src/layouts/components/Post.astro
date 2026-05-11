@@ -11,11 +11,11 @@ const { summary_length } = config.settings;
   {
     post.data.image && (
       <Image
-        class="rounded-lg"
+        class="blog-index-image mx-auto"
         src={post.data.image}
         alt={post.data.title}
-        width={index === 0 ? 925 : 445}
-        height={index === 0 ? 475 : 230}
+        width={450}
+        height={250}
       />
     )
   }

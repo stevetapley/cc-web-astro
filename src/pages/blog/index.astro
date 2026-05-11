@@ -46,11 +46,11 @@ const hasPosts = currentPosts.length > 0;
                   {
                     featuredPost.data.image && (
                       <Image
-                        class="rounded-lg"
+                        class="blog-index-image mx-auto"
                         src={featuredPost.data.image}
                         alt={featuredPost.data.title}
-                        width={925}
-                        height={475}
+                        width={450}
+                        height={250}
                       />
                     )
                   }
@@ -94,7 +94,7 @@ const hasPosts = currentPosts.length > 0;
               <div class="mx-auto max-w-[720px] rounded-[20px] border border-border bg-white/80 px-6 py-10 text-center shadow-[0_24px_60px_-46px_rgba(23,20,58,.35)]">
                 <h2 class="h4">No blog posts published yet</h2>
                 <p class="mt-3 text-text">
-                  The blog archive is currently empty. Publish a post whenever you're ready and it will appear here automatically.
+                  The blog archive is currently empty.
                 </p>
               </div>
             </div>

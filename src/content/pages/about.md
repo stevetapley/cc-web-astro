@@ -16,11 +16,9 @@ draft: false
 </div>
 
 ### Who I am
-I'm Steve - a product leader and software engineer based in Perth, Western Australia.
+I'm Steve, a builder with 30 years of software experience. I've spent the last decade working at the intersection of technology and people strategy in the SME space. That time gave me a front-row seat to how organisations think about their people - and how rarely individuals get the same clarity about themselves.
 
-I've spent 30 years building software, and the last decade working at the intersection of technology and people strategy in the SME space. That time gave me a front-row seat to how organisations think about their people - and how rarely individuals get the same clarity about themselves.
-
-I'm a builder at heart. Career Clarity started as a tool I wished existed - but nobody seemed to have built.
+Career Clarity started as a tool I wished existed - but nobody seemed to have built.
 
 <div class="not-prose my-5">
   <a class="btn btn-primary" href="https://www.linkedin.com/in/steve-tapley1/" target="_blank" rel="noopener noreferrer">
@@ -38,19 +36,18 @@ The problem wasn't the people. It was that nobody had given them any tools to wo
 ### Why I built this
 I kept having the same conversation with friends, colleagues, and people in my network who were clearly capable but quietly stuck. They made sensible decisions (good pay, great teams, professional growth), but it never quite added up. They hadn't actually chosen their trade-offs - it was just unconscious decision making.
 
-After a decade watching organisations invest heavily in understanding their people - but also seeing how rarely that clarity flowed back to the individual - I decided to build the tool I kept wishing existed.
-
-### What it is today
-Career Clarity is in early access and free to use while I continue to shape it based on real feedback.
-
-If you've used it and have feedback, I'd genuinely love to hear from you: [hello@careerclarity.app](mailto:hello@careerclarity.app)
+When I ran it myself, I found out I was a 'Principled Professional'. For me, that meant someone who protects accountability and psychological safety about most other things (including salary). In some ways, I knew that, but having it written down was powerful for me. Coaching conversations do get close, but it had never been this clear.
 
 ### What this isn't
-Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you.  It's just designed to show you your particular, and unique, hierarchy. What you do with it after that, is up to you.
+Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you. It's just designed to show you your particular, and unique, hierarchy. What you do with it after that, is up to you.
 
 <div class="not-prose mt-10 rounded-[24px] border border-border bg-light/50 px-6 py-6 md:px-8 md:py-7">
   <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to know what you'd actually trade?</p>
   <a class="btn btn-primary" href="https://my.careerclarity.app/" target="_blank" rel="noopener noreferrer">
     Build your picture - free during early access →
   </a>
+
+<p>
+<br/>
+  If you've used it and have feedback, I'd genuinely love to hear from you: [hello@careerclarity.app](mailto:hello@careerclarity.app)</p>
 </div>
