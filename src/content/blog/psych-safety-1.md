@@ -5,7 +5,7 @@ description: "A simple sample article to preview blog layout and post formatting
 image: "/images/blog-1.jpg"
 date: 2026-05-04T09:00:00Z
 categories: ["Cultural", "Psychological Safety"]
-tags: ["test", "planning"]
+tags: []
 draft: true
 ---
 In 1999, Amy Edmondson set out to study whether better-performing nursing teams made fewer errors. She expected they would. They didn't. High-performing teams reported significantly more mistakes than their lower-performing counterparts — not because they were less careful, but because they felt safe enough to admit them. The worse teams looked cleaner on paper. They were just quieter about what went wrong.

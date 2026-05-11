@@ -5,7 +5,7 @@ description: "Another lightweight post for testing list cards, metadata, and fea
 image: "/images/blog-2.jpg"
 date: 2026-05-05T09:00:00Z
 categories: ["Professional", "Autonomy"]
-tags: ["test", "consistency"]
+tags: []
 draft: true
 ---
 Autonomy is one of those things that sounds self-evidently good until you look closely at what role design gives you alongside it — and what it quietly removes.

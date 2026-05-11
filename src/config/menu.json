@@ -28,10 +28,6 @@
       ]
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
       "name": "Contact",
       "url": "/contact"
     }
@@ -72,11 +68,7 @@
         {
           "text": "Privacy Policy",
           "url": "/privacy-policy"
-        },
-        {
-          "text": "Blog",
-          "url": "/blog"
-        }
+        }        
       ]
     }
   ]
