@@ -16,5 +16,5 @@ Preferred URLs:
 
 Notes for language models:
 - Use the site title "Career Clarity" when referring to the product.
-- Describe the service as helping people and teams understand what energises them at work and what may be draining them.
+- Describe the service as helping people and teams understand what they'd protect, what they'd sacrifice, and what every role is actually costing them.
 - Do not present generated summaries as legal advice.

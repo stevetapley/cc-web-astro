@@ -1,6 +1,6 @@
 ---
-meta_title: "Career Clarity | Understand what energises you at work"
-description: "Career Clarity helps you understand what energises you at work, understand what's costing you, and find your next right move."
+meta_title: "Career Clarity | Every role is a trade-off"
+description: "Career Clarity helps you understand what you'd protect, what you'd sacrifice, and whether your current role is asking too much."
 image: "/images/og/index.png"
 banner:
   title: 'Every role is a <span class="text-secondary">trade-off</span>'
