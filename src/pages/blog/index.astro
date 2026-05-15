@@ -23,6 +23,23 @@ const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 const featuredPost = currentPosts[0];
 const hasPosts = currentPosts.length > 0;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const blogIndexJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: postIndex?.data.meta_title || postIndex?.data.title,
+  description: postIndex?.data.description || config.metadata.meta_description,
+  url: `${siteUrl}/blog`,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: currentPosts.map((post, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${siteUrl}/blog/${post.id}`,
+      name: post.data.title,
+    })),
+  },
+};
 ---
 
 <Base
@@ -30,6 +47,7 @@ const hasPosts = currentPosts.length > 0;
   meta_title={postIndex?.data.meta_title}
   description={postIndex?.data.description}
   image={postIndex?.data.image}
+  structured_data={blogIndexJsonLd}
 >
   <section class="section">
     <div class="container">

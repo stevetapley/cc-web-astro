@@ -1,5 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
+import config from "@/config/config.json";
 import AudiencePage from "@/components/AudiencePage.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -20,6 +21,18 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { title, meta_title, description, image, template } = page.data;
 const { Content } = await render(page);
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const pageSchemaTypeById: Record<string, string> = {
+  about: "AboutPage",
+  "privacy-policy": "PrivacyPolicy",
+};
+const regularPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": pageSchemaTypeById[page.id] || "WebPage",
+  name: meta_title || title,
+  description: description || config.metadata.meta_description,
+  url: `${siteUrl}/${page.id}`,
+};
 ---
 
 <Base
@@ -27,6 +40,7 @@ const { Content } = await render(page);
   meta_title={meta_title}
   description={description}
   image={image}
+  structured_data={regularPageJsonLd}
 >
   {
     template === "audience" ? (

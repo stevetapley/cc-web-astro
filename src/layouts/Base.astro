@@ -59,24 +59,63 @@ const socialImage = `${config.site.base_url}${
   image ? image : config.metadata.meta_image
 }`;
 const siteUrl = config.site.base_url.replace(/\/$/, "");
+const siteHostname = new URL(siteUrl).hostname;
+const organizationId = `${siteUrl}/#organization`;
+const websiteId = `${siteUrl}/#website`;
+const organizationDescription = plainify(config.metadata.meta_description);
 const organizationJsonLd = {
   "@context": "https://schema.org",
+  "@id": organizationId,
   "@type": "Organization",
   name: siteTitle,
+  alternateName: siteHostname,
+  description: organizationDescription,
   url: siteUrl,
   logo: `${siteUrl}${config.site.logo}`,
 };
 const websiteJsonLd = {
   "@context": "https://schema.org",
+  "@id": websiteId,
   "@type": "WebSite",
   name: siteTitle,
   url: siteUrl,
+  publisher: {
+    "@id": organizationId,
+  },
+  inLanguage: "en",
 };
 const pageStructuredData = structured_data
   ? Array.isArray(structured_data)
     ? structured_data
     : [structured_data]
   : [];
+const pageStructuredDataTypes = new Set(
+  pageStructuredData
+    .flatMap((item) => {
+      const typeValue = item["@type"];
+      return Array.isArray(typeValue) ? typeValue : [typeValue];
+    })
+    .filter((typeValue): typeValue is string => typeof typeValue === "string"),
+);
+const hasPrimaryPageSchema = [
+  "WebPage",
+  "AboutPage",
+  "CollectionPage",
+  "ContactPage",
+  "FAQPage",
+  "BlogPosting",
+  "PrivacyPolicy",
+].some((schemaType) => pageStructuredDataTypes.has(schemaType));
+const defaultWebPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: resolvedTitle,
+  description: resolvedDescription,
+  url: canonicalUrl,
+  isPartOf: {
+    "@id": websiteId,
+  },
+};
 ---
 
 <!doctype html>
@@ -175,6 +214,11 @@ const pageStructuredData = structured_data
 
     <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
+    {
+      !hasPrimaryPageSchema && (
+        <script type="application/ld+json" set:html={JSON.stringify(defaultWebPageJsonLd)} />
+      )
+    }
     {
       pageStructuredData.map((item) => (
         <script type="application/ld+json" set:html={JSON.stringify(item)} />

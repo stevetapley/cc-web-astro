@@ -1,23 +1,125 @@
 ---
-title: Frequently Asked Questions
-description: "meta description"
-draft: true
+title: "Frequently Asked Questions"
+description: "Answers to common questions about Career Clarity — what it is, how the assessment works, what a trade-off profile is, and what Clarity Coach does."
+draft: false
 faqs:
-  - title: Will updates also be free?
-    answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+  - title: "What is Career Clarity?"
+    answer: |-
+      Career Clarity is a free career self-assessment tool for individual contributors and job seekers. It helps you understand your real workplace priorities — not what you think you should want, but what you would actually protect, and what you would genuinely sacrifice, when forced to choose.
 
-  - title: Discounts for students and Non Profit Organizations?
-    answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus [link](https://www.example.com) ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+      The tool works by asking you to rate and rank 20 factors across four areas: culture, professional fit, personal life, and compensation. The result is a personalised trade-off profile: a clear hierarchy of what matters most to you, where your current role is working, and where it isn't.
 
-  - title: I need something unique, Can you make it?
-    answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+  - title: "Who is Career Clarity for?"
+    answer: |-
+      Career Clarity is built for:
 
-  - title: Is there any documentation and support?
-    answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+      - **Individual contributors** who feel something is off in their current role but can't quite name it
+      - **Job seekers and career changers** who want to evaluate opportunities against what they actually need — not just salary and title
+      - **Anyone who has made a sensible career decision that still didn't quite add up**
 
-  - title: Any refunds?
-    answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus [link](https://www.example.com) ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+      You don't need to be unhappy at work to benefit. Career Clarity is equally useful if you're thriving and want to understand why, or if you're weighing a new offer and need a clear framework to evaluate it honestly.
 
-  - title: What is a product key?
-    answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+  - title: "How is this different from a personality test?"
+    answer: |-
+      Career Clarity is not a personality test. It does not assign you a type, a colour, a four-letter code, or an archetype.
+
+      Most personality tools tell you *what kind of person you are*. Career Clarity tells you *what trade-offs you're actually making* — and whether those trade-offs are ones you've consciously chosen or ones that quietly happened to you.
+
+      The key difference is the credit allocation mechanism. You are given a limited number of credits to distribute across your priorities. Because you cannot give everything a top score, the tool forces genuine prioritisation. The result reflects your real hierarchy, not an idealised version of it.
+
+  - title: "How does the assessment work?"
+    answer: |-
+      The assessment takes approximately five minutes and has four stages:
+
+      1. **Reflect** — Rate 20 factors across culture, professional fit, personal life, and compensation. This surfaces how you currently feel about each area.
+      2. **Rank** — Allocate a limited number of credits across your highest-rated factors. Because credits are finite, you cannot mark everything as a non-negotiable. This is where your real hierarchy emerges.
+      3. **Reveal** — Receive your personalised trade-off profile: what you would protect, what you would compromise on, where tensions exist between competing priorities, and where your current role is misaligned.
+      4. **Ask** — Unlock Clarity Coach, an AI-powered virtual coaching interface that is personalised to your results.
+
+  - title: "What is the credit allocation system and why does it matter?"
+    answer: |-
+      The credit system is the core of how Career Clarity works.
+
+      After rating your 20 factors, you are given a fixed number of credits to assign across them. You cannot allocate maximum credits to everything — the budget forces you to choose what genuinely comes first.
+
+      This matters because most people, when asked to rate career factors in isolation, score nearly everything highly. The credit system removes that option. It surfaces the hierarchy you actually hold, rather than the one you believe you should hold. The tension between what you rated highly and what you were willing to spend credits on is often where the most useful insight sits.
+
+  - title: "What is a trade-off profile?"
+    answer: |-
+      A trade-off profile is the personalised output you receive after completing the Career Clarity assessment. It includes:
+
+      - **Your priority hierarchy** — a ranked view of what matters most to you across culture, compensation, professional fit, and personal life
+      - **Your non-negotiables** — the factors you would refuse to compromise on, and the tensions between them that most roles cannot fully resolve
+      - **Your compromise zone** — the factors you rated highly but were willing to trade away, which often reveals where unconscious compromises are being made
+      - **Strategic recommendations** — practical actions you can take now, from adjusting how you structure your work to conversations worth having with your manager
+      - **Deep-dives** — for each non-negotiable, a breakdown of the upside when it's right, the cost when it isn't, and specific questions worth raising in your next role or review
+
+      Your trade-off profile is specific to how you actually function. It is not a generic career framework applied to your answers — it reflects your particular hierarchy.
+
+  - title: "What is Clarity Coach?"
+    answer: |-
+      Clarity Coach is an AI-powered virtual coaching interface that unlocks after you complete your assessment. It is trained on your trade-off profile, which means every conversation is grounded in your specific results — not generic career advice.
+
+      You can use Clarity Coach to:
+
+      - Understand why a particular driver matters so much to you
+      - Explore what to do about a friction point in your current role
+      - Evaluate whether a role you are considering is actually a fit for your hierarchy
+      - Prepare for a conversation with your manager about what you need
+      - Work through a career decision you are finding hard to make
+
+      Clarity Coach is not a chatbot with scripted responses. It uses a large language model (LLM) to reason about your specific profile and respond to your actual situation.
+
+  - title: "Is my data private?"
+    answer: |-
+      Yes. Career Clarity does not sell your data or share it with third parties. Your assessment results are used solely to generate your trade-off profile and power your Clarity Coach conversations.
+
+      Full details are available in the [Privacy Policy](https://careerclarity.app/privacy-policy).
+
+  - title: "Is Career Clarity really free?"
+    answer: |-
+      Yes. Career Clarity is free to use during early access. No credit card is required at any point.
+
+  - title: "How long does the assessment take?"
+    answer: |-
+      The assessment takes approximately five minutes. There are 20 questions across two stages — rating and credit allocation — followed by your results.
+
+  - title: "What do I get at the end?"
+    answer: |-
+      After completing the assessment you receive:
+
+      - A full trade-off profile personalised to your results
+      - A ranked view of your key drivers and non-negotiables
+      - Analysis of tensions between competing priorities
+      - Strategic recommendations and concrete next steps
+      - Deep-dives into each of your non-negotiables
+      - Access to Clarity Coach, an AI coaching interface personalised to your profile
+
+      Your profile is available immediately after you complete the assessment.
+
+  - title: "Can I use Career Clarity if I'm happy in my current role?"
+    answer: |-
+      Yes. Career Clarity is not only for people who are unhappy or actively looking to leave.
+
+      If you are happy in your current role, Career Clarity can help you understand *why* — which factors are being met, and what your employer is getting right. That kind of clarity is useful for evaluating future opportunities, negotiating for what you need, or simply understanding what to protect.
+
+  - title: "Can I use Career Clarity if I'm actively job hunting?"
+    answer: |-
+      Yes. Career Clarity is particularly useful when you are evaluating new roles, because your trade-off profile gives you a clear framework to assess any opportunity against.
+
+      Rather than reacting to each role on its own terms — salary here, culture there — you can measure it against your actual hierarchy. That makes it easier to spot roles that look good on paper but are likely to leave you in the same position you started.
+
+  - title: "Is Career Clarity a replacement for a career coach?"
+    answer: |-
+      No. Career Clarity is a self-assessment tool and AI coaching interface, not a replacement for a qualified human career coach.
+
+      What it does offer is structured self-reflection and an AI interface that can help you explore your results in depth. For many people, that is a useful starting point — or a way to get more out of a coaching relationship by arriving with greater clarity about their own priorities.
+
+  - title: "Who built Career Clarity?"
+    answer: |-
+      Career Clarity was built by Steve Tapley, a product leader and software engineer based in Perth, Western Australia. Steve has spent 30 years building software, with the last decade working at the intersection of technology and people strategy in the SME space.
+
+      The tool came out of a problem Steve kept seeing: smart, capable professionals who knew something was off in their career but could not name it precisely enough to act on it. Career Clarity is the tool he kept wishing existed.
+
+      [Connect with Steve on LinkedIn →](https://www.linkedin.com/in/steve-tapley1/)
 ---

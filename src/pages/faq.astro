@@ -1,6 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
-import { markdownify } from "@/lib/utils/textConverter";
+import config from "@/config/config.json";
+import { markdownify, plainify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
@@ -11,9 +12,29 @@ if (entry?.data?.draft) {
 }
 
 const { title, description, faqs } = entry.data;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const faqPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  name: title,
+  description,
+  url: `${siteUrl}/faq`,
+  mainEntity: (faqs || []).map((faq) => ({
+    "@type": "Question",
+    name: plainify(faq.title),
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: plainify(faq.answer),
+    },
+  })),
+};
 ---
 
-<Base title={title} description={description} noindex={true}>
+<Base
+  title={title}
+  description={description}
+  structured_data={faqPageJsonLd}
+>
   <section class="section">
     <div class="container">
       <h1 class="text-center font-normal" set:html={markdownify(title)} />

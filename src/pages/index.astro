@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
+import config from "@/config/config.json";
 import ActionButton from "@/layouts/components/ActionButton.astro";
 import AudienceTabs from "@/layouts/components/AudienceTabs";
 import ImageCarousel from "@/layouts/components/ImageCarousel";
@@ -26,6 +27,52 @@ const {
   call_to_action,
   testimonial,
 } = homepage.data;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const homepageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: meta_title || "Career Clarity",
+  description: homepageDescription || config.metadata.meta_description,
+  url: siteUrl,
+};
+const webAppConfig = config.metadata.web_application;
+const webApplicationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: webAppConfig.name,
+  url: siteUrl,
+  applicationCategory: webAppConfig.application_category,
+  operatingSystem: webAppConfig.operating_system,
+  offers: {
+    "@type": "Offer",
+    price: webAppConfig.price,
+    priceCurrency: webAppConfig.price_currency,
+    description: webAppConfig.offer_description,
+  },
+  description: webAppConfig.description,
+  audience: {
+    "@type": "Audience",
+    audienceType: webAppConfig.audience_type,
+  },
+  author: {
+    "@type": "Person",
+    name: webAppConfig.author_name,
+    jobTitle: webAppConfig.author_job_title,
+    description: webAppConfig.author_description,
+    url: webAppConfig.author_url,
+  },
+  provider: {
+    "@type": "Organization",
+    name: webAppConfig.provider_name,
+    url: siteUrl,
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: webAppConfig.provider_email,
+    },
+  },
+  featureList: webAppConfig.feature_list,
+  keywords: webAppConfig.keywords,
+};
 ---
 
 <Base
@@ -33,6 +80,7 @@ const {
   meta_title={meta_title}
   description={homepageDescription}
   image={homepageImage}
+  structured_data={[homepageJsonLd, webApplicationJsonLd]}
 >
   <section class="section pb-12 pt-8 md:pt-14">
     <div class="container">

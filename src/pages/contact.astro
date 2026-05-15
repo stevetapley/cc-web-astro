@@ -1,7 +1,8 @@
 ---
 import Base from "@/layouts/Base.astro";
+import config from "@/config/config.json";
 import ActionButton from "@/layouts/components/ActionButton.astro";
-import { markdownify } from "@/lib/utils/textConverter";
+import { markdownify, plainify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
@@ -10,9 +11,31 @@ const entry = (await getEntry(
   "-index"
 )) as CollectionEntry<"contact">;
 const { title, meta_title, description, image, info } = entry.data;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const contactText = (info?.contacts || []).map((contact) => plainify(contact)).join(" ");
+const emailMatch = contactText.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
+const contactPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: title,
+  description,
+  url: `${siteUrl}/contact`,
+  mainEntity: {
+    "@type": "Organization",
+    name: plainify(config.site.title),
+    url: siteUrl,
+    ...(emailMatch ? { email: emailMatch[0] } : {}),
+  },
+};
 ---
 
-<Base title={title} meta_title={meta_title} description={description} image={image}>
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+  structured_data={contactPageJsonLd}
+>
   <section class="section pt-10 md:pt-14">
     <div class="container">
       <div class="audience-page-heading contact-page-heading">

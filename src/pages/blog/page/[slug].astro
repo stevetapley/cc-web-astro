@@ -36,6 +36,27 @@ const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
 const pageMetaTitle = postIndex?.data?.meta_title
   ? `${postIndex.data.meta_title} - Page ${currentPage}`
   : `${postIndex?.data?.title} - Page ${currentPage}`;
+const siteUrl = config.site.base_url.replace(/\/$/, "");
+const paginatedBlogJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: pageMetaTitle,
+  description: postIndex?.data.description || config.metadata.meta_description,
+  url: `${siteUrl}/blog/page/${currentPage}`,
+  isPartOf: {
+    "@type": "CollectionPage",
+    url: `${siteUrl}/blog`,
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: currentPosts.map((post, index) => ({
+      "@type": "ListItem",
+      position: indexOfFirstPost + index + 1,
+      url: `${siteUrl}/blog/${post.id}`,
+      name: post.data.title,
+    })),
+  },
+};
 ---
 
 <Base
@@ -43,6 +64,7 @@ const pageMetaTitle = postIndex?.data?.meta_title
   meta_title={pageMetaTitle}
   description={postIndex?.data.description}
   image={postIndex?.data.image}
+  structured_data={paginatedBlogJsonLd}
 >
   <section class="section">
     <div class="container">
