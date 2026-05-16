@@ -11,8 +11,8 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || "https://us.i.posthog
           window.location.hostname === "localhost" ||
           window.location.hostname === "127.0.0.1";
 
-        if (!posthogKey || isLocalhost || window.__careerClarityPostHogInitialized) return;
-        window.__careerClarityPostHogInitialized = true;
+        if (!posthogKey || isLocalhost || window.__kansoPostHogInitialized) return;
+        window.__kansoPostHogInitialized = true;
 
         const normalizedPosthogHost = posthogHost.replace(/\/$/, "");
 

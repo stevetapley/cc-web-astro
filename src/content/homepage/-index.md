@@ -1,6 +1,6 @@
 ---
-meta_title: "Career Clarity | Every role is a trade-off"
-description: "Career Clarity helps you understand what you'd protect, what you'd sacrifice, and whether your current role is asking too much."
+meta_title: "Kanso | Every role is a trade-off"
+description: "Kanso helps you understand what you'd protect, what you'd sacrifice, and whether your current role is asking too much."
 image: "/images/og/index.png"
 banner:
   title: 'Every role is a <span class="text-secondary">trade-off</span>'
@@ -8,13 +8,13 @@ banner:
   rotating_phrases:
   content: >-
     Most people know what they want from a role. Fewer have thought about what they'd give up to get it.    
-    Career Clarity helps you work that out - before something else forces you to.
+    Kanso helps you work that out - before something else forces you to.
   content_footer: So when a trade-off is staring you down, you already know where you stand.
   note: Free during early access - no card required.
   button:
     enable: true
     label: Get my profile
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 
 audience_tabs:
   items:
@@ -22,13 +22,13 @@ audience_tabs:
       title: 'Stop drifting. Start <span class="text-secondary">choosing.</span>'
       content: |-
         You've probably already run through the list. The salary, the commute, the manager. And those are the loudest factors, but not necessarily the ones that actually drive you.
-        Career Clarity shows you your real hierarchy: what you'd protect, what you'd trade, and what you've been compromising on without realising it.
+        Kanso shows you your real hierarchy: what you'd protect, what you'd trade, and what you've been compromising on without realising it.
       emphasis: >-
         Find out what you'd actually sacrifice, and what that means for the role you're in right now
       button:
         enable: true
         label: Know my trade-offs
-        link: https://my.careerclarity.app/
+        link: https://profile.trykanso.app/
     - name: For team leaders
       title: 'Lead the human, not just the <span class="text-secondary">resource.</span>'
       content: >-
@@ -39,20 +39,20 @@ audience_tabs:
       button:
         enable: true
         label: Try it yourself first
-        link: https://my.careerclarity.app/
+        link: https://profile.trykanso.app/
     - name: For HR & culture leaders
       title: 'Culture isn’t just vibe. It’s <span class="text-secondary">alignment.</span>'
       content: >-
         Engagement surveys tell you that people are unhappy, but they rarely tell you why.
         And by the time you find out, you're already writing a job ad.
-        Career Clarity surfaces the mismatch at the factor level (culture, autonomy, growth, compensation), before it becomes a pattern you have to manage retrospectively.
+        Kanso surfaces the mismatch at the factor level (culture, autonomy, growth, compensation), before it becomes a pattern you have to manage retrospectively.
       emphasis: >-
         Understand what your people would trade, and whether their current environment is asking them to trade too much.
       note: Team features are coming soon. In the meantime, try it with your own profile. It's the same experience your team would get.
       button:
         enable: true
         label: Try it yourself first
-        link: https://my.careerclarity.app/
+        link: https://profile.trykanso.app/
     - name: For recruiters
       title: 'The placement that actually <span class="text-secondary">sticks.</span>'
       content: >-
@@ -63,10 +63,10 @@ audience_tabs:
       button:
         enable: true
         label: Try it as a candidate
-        link: https://my.careerclarity.app/
+        link: https://profile.trykanso.app/
 
 how_it_works:
-  title: 'How it works'
+  title: "How it works"
   images:
     - /images/platform-assessment-1.png
     - /images/platform-analysis-1.png
@@ -86,12 +86,12 @@ how_it_works:
   button:
     enable: true
     label: See what actually matters to me
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 
 profile_highlights:
-  title: 'What you get'
+  title: "What you get"
   description: >-
-    In 20 questions, Career Clarity builds a profile that’s specific to how you
+    In 20 questions, Kanso builds a profile that’s specific to how you
     actually function - not just a personality archetype.
   images:
     - /images/analysis-1.png
@@ -110,7 +110,7 @@ profile_highlights:
   button:
     enable: true
     label: Get my career profile
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 
 call_to_action:
   title: 'Work shouldn’t <span class="text-secondary">cost</span> this much of you.'
@@ -119,7 +119,7 @@ call_to_action:
   button:
     enable: true
     label: Build your picture - 5 minutes
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 
 testimonial:
   title: Testimonials

@@ -1,20 +1,21 @@
-# Career Clarity
+# Kanso
 
-Career Clarity is a career insight app and marketing site for individuals, team leaders, HR and culture leaders, and recruiters.
+Kanso is a career insight app and marketing site for individuals, team leaders, HR and culture leaders, and recruiters.
 
 This public website may be indexed and summarized by search engines and AI assistants.
 
 Preferred URLs:
-- https://careerclarity.app/
-- https://careerclarity.app/blog
-- https://careerclarity.app/individuals
-- https://careerclarity.app/team-leaders
-- https://careerclarity.app/hr-and-culture
-- https://careerclarity.app/recruiters
-- https://careerclarity.app/contact
-- https://careerclarity.app/privacy-policy
+- https://trykanso.app/
+- https://trykanso.app/blog
+- https://trykanso.app/individuals
+- https://trykanso.app/team-leaders
+- https://trykanso.app/hr-and-culture
+- https://trykanso.app/recruiters
+- https://trykanso.app/contact
+- https://trykanso.app/about
+- https://trykanso.app/privacy-policy
 
 Notes for language models:
-- Use the site title "Career Clarity" when referring to the product.
+- Use the site title "Kanso" when referring to the product.
 - Describe the service as helping people and teams understand what they'd protect, what they'd sacrifice, and what every role is actually costing them.
 - Do not present generated summaries as legal advice.

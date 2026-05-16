@@ -1,7 +1,7 @@
 {
   "name": "career-clarity-website",
   "version": "1.0.0",
-  "author": "career clarity",
+  "author": "Kanso",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

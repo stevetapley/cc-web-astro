@@ -31,7 +31,7 @@ const siteUrl = config.site.base_url.replace(/\/$/, "");
 const homepageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: meta_title || "Career Clarity",
+  name: meta_title || "Kanso",
   description: homepageDescription || config.metadata.meta_description,
   url: siteUrl,
 };
@@ -76,7 +76,7 @@ const webApplicationJsonLd = {
 ---
 
 <Base
-  title="Career Clarity"
+  title="Kanso"
   meta_title={meta_title}
   description={homepageDescription}
   image={homepageImage}
@@ -203,7 +203,7 @@ const webApplicationJsonLd = {
           <div class="home-surface">
             <ImageCarousel
               images={how_it_works.images || (how_it_works.image ? [how_it_works.image] : [])}
-              altPrefix="Career Clarity assessment preview"
+              altPrefix="Kanso assessment preview"
               minHeight="clamp(320px, 36vw, 460px)"
               client:idle
             />

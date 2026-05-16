@@ -1,6 +1,6 @@
 ---
 title: "What You're Actually Trading When You Ask for Psychological Safety"
-meta_title: "What You're Actually Trading When You Ask for Psychological Safety | Career Clarity Blog"
+meta_title: "What You're Actually Trading When You Ask for Psychological Safety | Kanso Blog"
 description: "A simple sample article to preview blog layout and post formatting."
 image: "/images/blog-1.jpg"
 date: 2026-05-04T09:00:00Z
@@ -50,9 +50,9 @@ Plenty of people want transparency in principle. It's a different thing in pract
 
 ### Where this sits in your hierarchy
 
-Psychological safety is one of 19 factors in Career Clarity's assessment, sitting under Cultural Fit. The tool doesn't assume it's a must-have. It asks you to decide whether it is — and what you'd trade to have it, or give up by not having it.
+Psychological safety is one of 19 factors in Kanso's assessment, sitting under Cultural Fit. The tool doesn't assume it's a must-have. It asks you to decide whether it is — and what you'd trade to have it, or give up by not having it.
 
-To find out where it sits in your own hierarchy: https://careerclarity.app
+To find out where it sits in your own hierarchy: https://trykanso.app
 
 Have you ever worked in a team where psychological safety genuinely worked — and was the version of it you got the version you thought you wanted?
 

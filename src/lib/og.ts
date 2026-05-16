@@ -61,8 +61,8 @@ const clipText = (value: string, maxLength: number) =>
 const cleanOgTitle = (value: string) => {
   const cleaned = decodeHtmlEntities(
     plainify(value)
-      .replace(/^Career Clarity\s*\|\s*/i, "")
-      .replace(/\s*\|\s*Career Clarity$/i, ""),
+      .replace(/^Kanso\s*\|\s*/i, "")
+      .replace(/\s*\|\s*Kanso$/i, ""),
   ).trim();
 
   return cleaned || config.site.title;

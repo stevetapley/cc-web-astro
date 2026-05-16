@@ -56,7 +56,7 @@ const getEyebrow = (filePath: string) => {
   }
 
   if (filePath.includes(`${path.sep}pages${path.sep}`)) {
-    return "Career Clarity";
+    return "Kanso";
   }
 
   return config.site.title;

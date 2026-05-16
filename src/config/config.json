@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Career Clarity",
-    "base_url": "https://careerclarity.app",
+    "title": "Kanso",
+    "base_url": "https://trykanso.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/logo-only.png",
     "logo": "/images/logo-light-writing.png",
     "logo_width": "170",
     "logo_height": "38",
-    "logo_text": "Career Clarity"
+    "logo_text": "Kanso"
   },
   "settings": {
     "pagination": 4,
@@ -17,32 +17,32 @@
   "nav_button": {
     "enable": true,
     "label": "Get my profile",
-    "link": "https://my.careerclarity.app/"
+    "link": "https://profile.trykanso.app/"
   },
   "params": {
     "contact_form_action": "#",
-    "footer_content": "Career Clarity is a free career self-assessment tool for individual contributors and job seekers. It identifies your real workplace trade-off hierarchy — not a personality archetype, but a ranked picture of what you'd protect, what you'd compromise on, and what your current role is actually costing you. A 20-question assessment allocates limited credits across culture, compensation, professional fit, and personal life to surface your true priorities. Results include a personalised trade-off profile, key drivers, strategic recommendations, and access to Clarity Coach — an AI-powered virtual coaching interface for exploring your priorities and evaluating roles.",
-    "copyright": "© Career Clarity"
+    "footer_content": "Kanso is a free career self-assessment tool for individual contributors and job seekers. It identifies your real workplace trade-off hierarchy — not a personality archetype, but a ranked picture of what you'd protect, what you'd compromise on, and what your current role is actually costing you. A 20-question assessment allocates limited credits across culture, compensation, professional fit, and personal life to surface your true priorities. Results include a personalised trade-off profile, key drivers, strategic recommendations, and access to Clarity Coach — an AI-powered virtual coaching interface for exploring your priorities and evaluating roles.",
+    "copyright": "© Kanso"
   },
   "metadata": {
-    "meta_author": "Career Clarity",
+    "meta_author": "Kanso",
     "meta_image": "/images/og/index.png",
-    "meta_description": "Career Clarity is a free self-assessment tool that helps individual contributors and job seekers identify their real career trade-offs. A 20-question quiz surfaces what you'd protect, what you'd sacrifice, and where your current role is falling short - then unlocks Clarity Coach, an AI coaching interface personalised to your results.",
+    "meta_description": "Kanso is a free self-assessment tool that helps individual contributors and job seekers identify their real career trade-offs. A 20-question quiz surfaces what you'd protect, what you'd sacrifice, and where your current role is falling short - then unlocks Clarity Coach, an AI coaching interface personalised to your results.",
     "web_application": {
-      "name": "Career Clarity",
+      "name": "Kanso",
       "application_category": "BusinessApplication",
       "operating_system": "Web",
       "price": "0",
       "price_currency": "USD",
       "offer_description": "Free during early access. No credit card required.",
-      "description": "Career Clarity is a career self-assessment tool that helps individual contributors and job seekers identify their real workplace trade-off hierarchy. Unlike personality tests or job-matching tools, Career Clarity measures trade-offs: users allocate a limited number of credits across 20 factors spanning culture, compensation, professional fit, and personal life. The result is a personalised trade-off profile that shows what the user would protect, what they would sacrifice, and where their current role is misaligned with their actual priorities. Results include key drivers, tension analysis between competing priorities, strategic recommendations, and deep-dives into each non-negotiable. Users also unlock Clarity Coach - an AI-powered virtual coaching interface trained on their profile - which they can use to explore why a driver matters, evaluate whether a new role is a genuine fit, or prepare for conversations with their manager. Career Clarity does not assign personality types, color codes, or archetypes. It is built for people who already know something feels off but cannot name it precisely enough to act.",
+      "description": "Kanso is a career self-assessment tool that helps individual contributors and job seekers identify their real workplace trade-off hierarchy. Unlike personality tests or job-matching tools, Kanso measures trade-offs: users allocate a limited number of credits across 20 factors spanning culture, compensation, professional fit, and personal life. The result is a personalised trade-off profile that shows what the user would protect, what they would sacrifice, and where their current role is misaligned with their actual priorities. Results include key drivers, tension analysis between competing priorities, strategic recommendations, and deep-dives into each non-negotiable. Users also unlock Clarity Coach - an AI-powered virtual coaching interface trained on their profile - which they can use to explore why a driver matters, evaluate whether a new role is a genuine fit, or prepare for conversations with their manager. Kanso does not assign personality types, color codes, or archetypes. It is built for people who already know something feels off but cannot name it precisely enough to act.",
       "audience_type": "Individual contributors, job seekers, and career changers who want to understand their real career priorities and trade-offs",
       "author_name": "Steve Tapley",
       "author_job_title": "Product Leader and Software Engineer",
       "author_description": "30 years in software, with a decade at the intersection of technology and people strategy in the SME space. Based in Perth, Western Australia.",
       "author_url": "https://www.linkedin.com/in/steve-tapley1/",
-      "provider_name": "Career Clarity",
-      "provider_email": "hello@careerclarity.app",
+      "provider_name": "Kanso",
+      "provider_email": "hello@trykanso.app",
       "feature_list": [
         "20-question trade-off assessment across culture, compensation, professional fit, and personal life",
         "Credit-limited priority ranking to surface genuine non-negotiables",
@@ -52,7 +52,7 @@
         "Deep-dives into each non-negotiable factor",
         "Clarity Coach: an AI-powered virtual coaching interface personalised to your results"
       ],
-      "keywords": "career trade-off assessment, career clarity, work priorities, job satisfaction, non-negotiables, career values, career change, burnout, workplace alignment, AI career coach"
+      "keywords": "career trade-off assessment, Kanso, work priorities, job satisfaction, non-negotiables, career values, career change, burnout, workplace alignment, AI career coach"
     }
   }
 }

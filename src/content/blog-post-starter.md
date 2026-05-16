@@ -6,7 +6,7 @@ Copy this template into a new file under src/content/blog, for example:
 ```md
 ---
 title: "Your Post Title"
-meta_title: "Your Post Title | Career Clarity Blog"
+meta_title: "Your Post Title | Kanso Blog"
 description: "One sentence summary of the post for search and social previews."
 image: "/images/your-cover-image.png"
 date: 2026-05-06T09:00:00Z

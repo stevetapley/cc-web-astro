@@ -1,29 +1,29 @@
 ---
 title: "Frequently Asked Questions"
-description: "Answers to common questions about Career Clarity — what it is, how the assessment works, what a trade-off profile is, and what Clarity Coach does."
+description: "Answers to common questions about Kanso — what it is, how the assessment works, what a trade-off profile is, and what Clarity Coach does."
 draft: false
 faqs:
-  - title: "What is Career Clarity?"
+  - title: "What is Kanso?"
     answer: |-
-      Career Clarity is a free career self-assessment tool for individual contributors and job seekers. It helps you understand your real workplace priorities — not what you think you should want, but what you would actually protect, and what you would genuinely sacrifice, when forced to choose.
+      Kanso is a free career self-assessment tool for individual contributors and job seekers. It helps you understand your real workplace priorities — not what you think you should want, but what you would actually protect, and what you would genuinely sacrifice, when forced to choose.
 
       The tool works by asking you to rate and rank 20 factors across four areas: culture, professional fit, personal life, and compensation. The result is a personalised trade-off profile: a clear hierarchy of what matters most to you, where your current role is working, and where it isn't.
 
-  - title: "Who is Career Clarity for?"
+  - title: "Who is Kanso for?"
     answer: |-
-      Career Clarity is built for:
+      Kanso is built for:
 
       - **Individual contributors** who feel something is off in their current role but can't quite name it
       - **Job seekers and career changers** who want to evaluate opportunities against what they actually need — not just salary and title
       - **Anyone who has made a sensible career decision that still didn't quite add up**
 
-      You don't need to be unhappy at work to benefit. Career Clarity is equally useful if you're thriving and want to understand why, or if you're weighing a new offer and need a clear framework to evaluate it honestly.
+      You don't need to be unhappy at work to benefit. Kanso is equally useful if you're thriving and want to understand why, or if you're weighing a new offer and need a clear framework to evaluate it honestly.
 
   - title: "How is this different from a personality test?"
     answer: |-
-      Career Clarity is not a personality test. It does not assign you a type, a colour, a four-letter code, or an archetype.
+      Kanso is not a personality test. It does not assign you a type, a colour, a four-letter code, or an archetype.
 
-      Most personality tools tell you *what kind of person you are*. Career Clarity tells you *what trade-offs you're actually making* — and whether those trade-offs are ones you've consciously chosen or ones that quietly happened to you.
+      Most personality tools tell you *what kind of person you are*. Kanso tells you *what trade-offs you're actually making* — and whether those trade-offs are ones you've consciously chosen or ones that quietly happened to you.
 
       The key difference is the credit allocation mechanism. You are given a limited number of credits to distribute across your priorities. Because you cannot give everything a top score, the tool forces genuine prioritisation. The result reflects your real hierarchy, not an idealised version of it.
 
@@ -38,7 +38,7 @@ faqs:
 
   - title: "What is the credit allocation system and why does it matter?"
     answer: |-
-      The credit system is the core of how Career Clarity works.
+      The credit system is the core of how Kanso works.
 
       After rating your 20 factors, you are given a fixed number of credits to assign across them. You cannot allocate maximum credits to everything — the budget forces you to choose what genuinely comes first.
 
@@ -46,7 +46,7 @@ faqs:
 
   - title: "What is a trade-off profile?"
     answer: |-
-      A trade-off profile is the personalised output you receive after completing the Career Clarity assessment. It includes:
+      A trade-off profile is the personalised output you receive after completing the Kanso assessment. It includes:
 
       - **Your priority hierarchy** — a ranked view of what matters most to you across culture, compensation, professional fit, and personal life
       - **Your non-negotiables** — the factors you would refuse to compromise on, and the tensions between them that most roles cannot fully resolve
@@ -72,13 +72,13 @@ faqs:
 
   - title: "Is my data private?"
     answer: |-
-      Yes. Career Clarity does not sell your data or share it with third parties. Your assessment results are used solely to generate your trade-off profile and power your Clarity Coach conversations.
+      Yes. Kanso does not sell your data or share it with third parties. Your assessment results are used solely to generate your trade-off profile and power your Clarity Coach conversations.
 
-      Full details are available in the [Privacy Policy](https://careerclarity.app/privacy-policy).
+      Full details are available in the [Privacy Policy](https://trykanso.app/privacy-policy).
 
-  - title: "Is Career Clarity really free?"
+  - title: "Is Kanso really free?"
     answer: |-
-      Yes. Career Clarity is free to use during early access. No credit card is required at any point.
+      Yes. Kanso is free to use during early access. No credit card is required at any point.
 
   - title: "How long does the assessment take?"
     answer: |-
@@ -97,29 +97,29 @@ faqs:
 
       Your profile is available immediately after you complete the assessment.
 
-  - title: "Can I use Career Clarity if I'm happy in my current role?"
+  - title: "Can I use Kanso if I'm happy in my current role?"
     answer: |-
-      Yes. Career Clarity is not only for people who are unhappy or actively looking to leave.
+      Yes. Kanso is not only for people who are unhappy or actively looking to leave.
 
-      If you are happy in your current role, Career Clarity can help you understand *why* — which factors are being met, and what your employer is getting right. That kind of clarity is useful for evaluating future opportunities, negotiating for what you need, or simply understanding what to protect.
+      If you are happy in your current role, Kanso can help you understand *why* — which factors are being met, and what your employer is getting right. That kind of clarity is useful for evaluating future opportunities, negotiating for what you need, or simply understanding what to protect.
 
-  - title: "Can I use Career Clarity if I'm actively job hunting?"
+  - title: "Can I use Kanso if I'm actively job hunting?"
     answer: |-
-      Yes. Career Clarity is particularly useful when you are evaluating new roles, because your trade-off profile gives you a clear framework to assess any opportunity against.
+      Yes. Kanso is particularly useful when you are evaluating new roles, because your trade-off profile gives you a clear framework to assess any opportunity against.
 
       Rather than reacting to each role on its own terms — salary here, culture there — you can measure it against your actual hierarchy. That makes it easier to spot roles that look good on paper but are likely to leave you in the same position you started.
 
-  - title: "Is Career Clarity a replacement for a career coach?"
+  - title: "Is Kanso a replacement for a career coach?"
     answer: |-
-      No. Career Clarity is a self-assessment tool and AI coaching interface, not a replacement for a qualified human career coach.
+      No. Kanso is a self-assessment tool and AI coaching interface, not a replacement for a qualified human career coach.
 
       What it does offer is structured self-reflection and an AI interface that can help you explore your results in depth. For many people, that is a useful starting point — or a way to get more out of a coaching relationship by arriving with greater clarity about their own priorities.
 
-  - title: "Who built Career Clarity?"
+  - title: "Who built Kanso?"
     answer: |-
-      Career Clarity was built by Steve Tapley, a product leader and software engineer based in Perth, Western Australia. Steve has spent 30 years building software, with the last decade working at the intersection of technology and people strategy in the SME space.
+      Kanso was built by Steve Tapley, a product leader and software engineer based in Perth, Western Australia. Steve has spent 30 years building software, with the last decade working at the intersection of technology and people strategy in the SME space.
 
-      The tool came out of a problem Steve kept seeing: smart, capable professionals who knew something was off in their career but could not name it precisely enough to act on it. Career Clarity is the tool he kept wishing existed.
+      The tool came out of a problem Steve kept seeing: smart, capable professionals who knew something was off in their career but could not name it precisely enough to act on it. Kanso is the tool he kept wishing existed.
 
       [Connect with Steve on LinkedIn →](https://www.linkedin.com/in/steve-tapley1/)
 ---

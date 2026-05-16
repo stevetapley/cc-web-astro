@@ -1,6 +1,6 @@
 ---
 title: "The Cost of Being Left Alone"
-meta_title: "The Cost of Being Left Alone | Career Clarity Blog"
+meta_title: "The Cost of Being Left Alone | Kanso Blog"
 description: "Another lightweight post for testing list cards, metadata, and featured content."
 image: "/images/blog-2.jpg"
 date: 2026-05-05T09:00:00Z
@@ -54,7 +54,7 @@ There's also a version of wanting autonomy that's really wanting to escape a spe
 
 Most people haven't been forced to choose between autonomy and something else they also want. They've never had to decide whether it matters more than structured development, or close collaboration, or a team that moves as a unit. Until you face that trade explicitly, you're working with a preference, not a hierarchy.
 
-To find out where autonomy actually sits in yours: https://careerclarity.app
+To find out where autonomy actually sits in yours: https://trykanso.app
 
 ---
 

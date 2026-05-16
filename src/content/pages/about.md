@@ -1,7 +1,7 @@
 ---
 title: "About"
-meta_title: "About | Career Clarity"
-description: "Career Clarity was built by a product leader with 30 years in software and over a decade helping organisations understand their people. Here's the story."
+meta_title: "About | Kanso"
+description: "Kanso was built by a product leader with 30 years in software and over a decade helping organisations understand their people. Here's the story."
 image: "/images/og/about.png"
 draft: false
 ---
@@ -19,7 +19,7 @@ draft: false
 
 I'm Steve, a builder with 30 years of software experience. I've spent the last decade working at the intersection of technology and people strategy in the SME space. That time gave me a front-row seat to how organisations think about their people - and how rarely individuals get the same clarity about themselves.
 
-Career Clarity started as a tool I wished existed - but nobody seemed to have built.
+Kanso started as a tool I wished existed - but nobody seemed to have built.
 
 <div class="not-prose my-5">
   <a class="btn btn-primary" href="https://www.linkedin.com/in/steve-tapley1/" target="_blank" rel="noopener noreferrer">
@@ -43,16 +43,16 @@ When I ran it myself, I found out I was a 'Principled Professional'. For me, tha
 
 ### What this isn't
 
-Career Clarity doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you. It's just designed to show you your particular hierarchy. What you do with it after that, is up to you.
+Kanso doesn't tell you to leave your job, or stay in it. Nor does it give you a color, a fixed archetype, or a set of codes to describe you. It's just designed to show you your particular hierarchy. What you do with it after that, is up to you.
 
 <div class="not-prose mt-10 rounded-[24px] border border-border bg-light/50 px-6 py-6 md:px-8 md:py-7">
   <p class="mb-3 text-lg font-semibold text-text-dark md:text-xl">Ready to know what you'd actually trade?</p>
-  <a class="btn btn-primary" href="https://my.careerclarity.app/" target="_blank" rel="noopener noreferrer">
+  <a class="btn btn-primary" href="https://profile.trykanso.app/" target="_blank" rel="noopener noreferrer">
     Build your picture - free during early access →
   </a>
 
 <p><br/>
   If you've used it and have feedback, I'd genuinely love to hear from you:
-  <a class="text-primary hover:underline" href="mailto:hello@careerclarity.app">hello@careerclarity.app</a>
+  <a class="text-primary hover:underline" href="mailto:hello@trykanso.app">hello@trykanso.app</a>
 </p>
 </div>

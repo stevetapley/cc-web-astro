@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
-meta_title: "Privacy Policy | Career Clarity"
-description: "How Career Clarity collects, uses, stores, and protects your account, assessment, and service data."
+meta_title: "Privacy Policy | Kanso"
+description: "How Kanso collects, uses, stores, and protects your account, assessment, and service data."
 image: "/images/og/privacy-policy.png"
 draft: false
 ---
@@ -10,7 +10,7 @@ _Last updated: April 13, 2026_
 
 > ### Plain English Summary
 >
-> We built Career Clarity to help you with your career, not to harvest your data.
+> We built Kanso to help you with your career, not to harvest your data.
 >
 > We do not sell your personal data, we do not track you for third-party ads, and you remain in control of your information at all times.
 >
@@ -20,9 +20,9 @@ _Last updated: April 13, 2026_
 
 ## 1. Privacy Summary
 
-Career Clarity collects minimal personal information to provide and improve the service. This policy explains what we collect, why we collect it, how we use it, with whom we share it (including overseas disclosures), and how you can control it.
+Kanso collects minimal personal information to provide and improve the service. This policy explains what we collect, why we collect it, how we use it, with whom we share it (including overseas disclosures), and how you can control it.
 
-**Jurisdiction:** This privacy policy complies with the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth). Career Clarity operates globally and serves users in Australia, the European Union, the United States, and other English-speaking countries.
+**Jurisdiction:** This privacy policy complies with the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth). Kanso operates globally and serves users in Australia, the European Union, the United States, and other English-speaking countries.
 
 ## 2. Information We Collect
 
@@ -93,7 +93,7 @@ We do not sell or rent your personal information. We share personal information 
 
 **Important:** Personal information is stored and processed in overseas jurisdictions, primarily the United States and potentially the European Union. These countries may not provide the same level of data protection as Australian law.
 
-By using Career Clarity, you acknowledge and consent to the overseas disclosure and storage of your personal information. We take reasonable steps to ensure that overseas recipients handle your personal information in accordance with the Australian Privacy Principles, including through contractual arrangements where applicable.
+By using Kanso, you acknowledge and consent to the overseas disclosure and storage of your personal information. We take reasonable steps to ensure that overseas recipients handle your personal information in accordance with the Australian Privacy Principles, including through contractual arrangements where applicable.
 
 Where you provide consent via social login (Google, Facebook), you are also subject to those providers' privacy policies and international data practices.
 
@@ -148,7 +148,7 @@ You have the right to:
 - **Correct your information:** Update or correct inaccurate or incomplete information
 - **Export your data:** Request your assessment data in a portable format
 
-To exercise these rights, contact us at [privacy@careerclarity.app](mailto:privacy@careerclarity.app).
+To exercise these rights, contact us at [privacy@trykanso.app](mailto:privacy@trykanso.app).
 
 ### 7.2 Deletion and Objection
 
@@ -166,7 +166,7 @@ Where practicable, you may interact with us anonymously or using a pseudonym. Ho
 
 If you have a complaint about how we handle your personal information:
 
-1. **Contact us first:** Email [privacy@careerclarity.app](mailto:privacy@careerclarity.app) with details of your complaint
+1. **Contact us first:** Email [privacy@trykanso.app](mailto:privacy@trykanso.app) with details of your complaint
 2. **We will investigate:** We will acknowledge your complaint within 7 days and provide a detailed response within 30 days
 3. **Escalate to OAIC:** If you are not satisfied with our response, you may lodge a complaint with the Office of the Australian Information Commissioner:
    - **Website:** [www.oaic.gov.au](https://www.oaic.gov.au)
@@ -175,7 +175,7 @@ If you have a complaint about how we handle your personal information:
 
 ## 8. Children's Privacy
 
-Career Clarity is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will take steps to delete that information promptly.
+Kanso is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will take steps to delete that information promptly.
 
 If you are a parent or guardian and believe we have collected information about a child under 13, please contact us immediately.
 
@@ -198,7 +198,7 @@ We encourage you to review this policy periodically.
 
 For privacy-related questions, access requests, correction requests, complaints, or data deletion requests:
 
-**Email:** [privacy@careerclarity.app](mailto:privacy@careerclarity.app)
+**Email:** [privacy@trykanso.app](mailto:privacy@trykanso.app)
 
 We will respond to inquiries within a reasonable timeframe, typically within 7-30 days depending on the nature of the request.
 
@@ -233,7 +233,7 @@ We process your personal data under the following legal bases:
 
 Personal data transferred from the EU to third countries (including the United States) is protected through appropriate safeguards such as Standard Contractual Clauses (SCCs) where applicable.
 
-To exercise your GDPR rights, contact [privacy@careerclarity.app](mailto:privacy@careerclarity.app).
+To exercise your GDPR rights, contact [privacy@trykanso.app](mailto:privacy@trykanso.app).
 
 ---
 
@@ -264,6 +264,6 @@ We do not sell or share your personal information for cross-context behavioral a
 
 Under California's "Shine the Light" law, you may request information about disclosure of personal information to third parties for their direct marketing purposes. We do not share personal information with third parties for their direct marketing purposes.
 
-To exercise your California rights, contact [privacy@careerclarity.app](mailto:privacy@careerclarity.app) or call us if we establish a toll-free number in the future. We will verify your identity before processing requests.
+To exercise your California rights, contact [privacy@trykanso.app](mailto:privacy@trykanso.app) or call us if we establish a toll-free number in the future. We will verify your identity before processing requests.
 
 **Other US States:** Residents of Virginia, Colorado, Connecticut, Utah, and other states with comprehensive privacy laws may have similar rights. Contact us to exercise these rights.

@@ -1,27 +1,27 @@
 ---
 title: 'Stop drifting. Start <span class="text-primary">choosing.</span>'
-meta_title: "For Individuals | Career Clarity"
-description: "Understand your career drivers, uncover your non-negotiables, and find your next right move with Career Clarity."
+meta_title: "For Individuals | Kanso"
+description: "Understand your career drivers, uncover your non-negotiables, and find your next right move with Kanso."
 image: "/images/og/individuals.png"
 draft: false
 template: "audience"
-intro: "Most people haven't consciously decided what they'd sacrifice in a role until one forces them to. Career Clarity helps you work that out first."
+intro: "Most people haven't consciously decided what they'd sacrifice in a role until one forces them to. Kanso helps you work that out first."
 hero:
   title: "You don't know your hierarchy until a trade-off <span class=\"text-secondary\">forces</span> it."
   content: >-
     You can know what you want from a role and still not know what you'd give up to get it. Most people find out the hard way and accepting something that looks right on paper, then quietly compromising on the things that actually drive you.
     
     
-    Career Clarity makes that hierarchy explicit before a decision makes it for you.
+    Kanso makes that hierarchy explicit before a decision makes it for you.
   image: /images/platform-analysis-1.png
   button:
     enable: true
     label: Know my trade-offs
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 detail_section:
   title: "Every role is a <span class=\"text-secondary\">compromise</span>.<br/>Do you know what you're agreeing to?"
   content: >-
-    No role delivers everything. The question is whether the compromises you're making are conscious ones, or ones you've drifted into without noticing. Career Clarity helps you see:
+    No role delivers everything. The question is whether the compromises you're making are conscious ones, or ones you've drifted into without noticing. Kanso helps you see:
   image: /images/sierra-services-2.png
   bullets:
     - "**Your non-negotiables:** The factors you'd protect in any role and the ones where compromise has a real cost."
@@ -47,5 +47,5 @@ call_to_action:
   button:
     enable: true
     label: Build your picture - 5 minutes
-    link: https://my.careerclarity.app/
+    link: https://profile.trykanso.app/
 ---
