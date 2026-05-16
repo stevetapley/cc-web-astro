@@ -5,9 +5,9 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/logo-only.png",
-    "logo": "/images/logo-light-writing.png",
+    "logo": "/images/logo-integrated-wordmark.png",
     "logo_width": "170",
-    "logo_height": "38",
+    "logo_height": "55",
     "logo_text": "Kanso"
   },
   "settings": {
